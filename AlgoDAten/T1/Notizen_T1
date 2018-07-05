@@ -1,0 +1,38 @@
+
+Allgemeinheit: Alg löst problemklasse nich prob
+Determiniertheit: gleiche Engabe -> gelcihe Ausgabe 
+Determinismuts Gleiche Eingabe: gleiche Ausführung + Ausgabe immer gleich 
+Terminierung : hat endlich dauer in allen fälle
+Effizienz : Resourcensparend
+
+
+Aufgabe 1 
+a)
+    Allgemeinheit, Determiniertheit, temrinierung 
+b)
+
+c) 
+    
+d)
+        
+e)
+    a^b
+    
+    Allgemeinheit: ja Potenz rechnen 
+    Determiniertheit :     
+    Terminiert nicht bei b > 1
+    
+f)  FEHLER F5 STATT F
+    Ackermann Funktion : eine folge aus a+b, a*b, a^b
+    LOLWUT?
+    Allgemein : Ja
+            
+g)
+    Primazahlen:
+    allgemein : ja 
+    
+
+
+
+
+

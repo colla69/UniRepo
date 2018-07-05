@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage[utf8]{luainputenc}
+\usepackage{listings}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{amsfonts, amsmath}
+\usepackage[margin=3cm]{geometry}
+\begin{document}
+\title{Gedächtnisprotokoll der 1. ProMo Klausur SS12 - Bry, Hausmann, Zauner}
+\author{Max}
+\maketitle
+\begin{enumerate}[1)]
+	\item 
+    \begin{enumerate}[a)]
+      \item Definieren sie eine monomorphe Funktion
+      \item Definieren sie eine polymorphe Funktion
+      \item Definieren sie eine gecurryte Funktion, deren ungecurryte Version ein Tupel enthält.
+      \item Definieren sie eine Funktion höherer Ordnung
+    \end{enumerate}
+	\item  
+    \begin{enumerate}[a)]
+      \item Schreiben sie eine Funktion \verb|(order b b')|, die dieselbe Signatur/Wirkung hat wie \verb| b orelse b'|
+      \item Definieren sie ein A und ein A', so dass A und A' syntaktisch korrekt sind, aber verschiedene Ergebnisse liefern in Bezug auf die beiden Funktionen.
+    \end{enumerate}
+	\item Definieren sie 
+    \begin{lstlisting}[language=ML]
+reverse z = let 
+              val y = ref [];
+              val x = z
+            in
+              while not(hd(!x) != []) do (
+                y := hd(!x) :: !y;
+                x := tl(!x);
+              )
+              !y;
+            end 
+    \end{lstlisting}
+    in rein funktionaler Schreibweise, wobei die entstehende Funktion nicht selbst rekursiv sein darf.
+	\item 
+    Sei folgender Code gegeben:
+ \begin{lstlisting}[language=ML]
+let 
+  val y = 5; 
+  val x = 2;
+  fun g(y) = x * y; 
+  fun f(x,y) = x + g(y)
+in
+  (g(y), f(5,7))
+end;
+    \end{lstlisting}
+    \begin{enumerate}[a)]
+      \item  Was ist der Wert dieses Ausdrucks bei statischer Bindung?
+      \item  Was ist der Wert dieses Ausdrucks bei dynamischer Bindung?
+      \item  Wo ist der Nachteil der dynamischen Bindung?
+    \end{enumerate}
+  \item 
+    Seien 
+ \begin{lstlisting}[language=ML]
+fun f x = 1+x
+fun g x = f(x) * f(x)
+fun h x y = x+1 > 0 orelse f(y) < 0
+    \end{lstlisting}
+    Geben sie zu den folgenden fünf Auswertungs ausdrücken an, ob es sich hierbei um ein korrektes Fragment einer Evaluation handelt, die bei normaler Ausführung, bei applikativer Ausführung und gleicher Semantik von Sonderausdrücken wie in SML, bei keiner von beiden oder bei beiden, handelt.
+    \begin{enumerate}[a)]
+      \item 
+    \end{enumerate}
+  \item Definieren sie das Standardskalarprodukt über $\mathbb Z$, 
+    \begin{align*}
+      \mathbb Z \times \mathbb Z\to \mathbb Z, \; x,y \mapsto \sum_i x_i y_i
+    \end{align*}
+    funktional mit Hilfe von \verb|List.Map| und \verb|List.foldl/foldr| sowie 
+    \begin{lstlisting}
+fun zip (x::xs)(y::ys) = (x,y) :: zip xs ys
+  | zip [] [] = []
+    \end{lstlisting}
+\item 
+ Seien
+ \begin{lstlisting}[language=ML]
+val ks = [3, 5, ~7]
+val pred = fn x => x < 0
+fun f p x (y :: ys) = if p(y) then f(not o p) x ys
+                                else f p x ys
+    f p x _         = p(x) 
+fun g x = let 
+            fun f x = x
+          in 
+            g f x 
+          end
+\end{lstlisting}
+  Geben sie die Werte und Typen von folgenden Ausdrücken an
+\begin{lstlisting}[language=ML]
+f
+f pred 0 []
+f pred 0 ks
+g 
+g ks
+\end{lstlisting}
+\item 
+  Sei \verb/datatype 'a formula = Con of bool | Var of 'a | Not of a' formula |/\\
+  \verb/Or of a' formula * a' formula| And of a' formula * a' formula;/\\
+  In der Angabe war noch ein Beispielbaum und eine Repräsentation einer Formel gegeben gegeben.
+  Deklarieren sie \verb|eval (f)| als \verb|int formula -> bool|, so dass Zahlen $\geq 0$ eine wahre Variablenbelegung ergeben.
+\item 
+  \begin{enumerate}[a)]
+    \item Was unterscheidet exceptions/Ausnahmen von anderen Programmbestandteilen in Hinsicht auf die Auswertung?
+    \item Warum benutzt man sie trotzdem?
+  \end{enumerate}
+\end{enumerate}
+Korrekturen bitte an Max ät fs.lmu.de.
+\end{document}

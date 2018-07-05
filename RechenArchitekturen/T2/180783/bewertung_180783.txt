@@ -1,0 +1,24 @@
+= Bitte nur Bewertung und Kommentare ändern =
+=============================================
+========== UniWorx Bewertungsdatei ==========
+======= diese Datei ist UTF8 encodiert ======
+Informationen zum Übungsblatt:
+Veranstaltung: Rechnerarchitektur
+Blatt: Blatt 02
+Korrektor: Aaron Söhnen
+E-Mail: Aaron.Soehnen@campus.lmu.de
+Abgabe-Id: 180783
+Maximalpunktzahl: 11 Punkte
+=============================================
+Bewertung: 7.5
+=============================================
+Kommentare:
+Aufgabe 9: 4.5/5
+a) die letzten beiden Terme sind falsch (-1)
+b) Vorsicht, ausgefüllte Kreise stellen keine Negation dar, dafür musst du
+nicht-ausgefüllte Kreise benutzen (-0.5)
+
+Aufgabe 10: 3/5
+c) iii) ist falsch, richtig wäre i) gewesen.
+e) iii) ist falsch, richtig wäre ii) gewesen.
+============ Ende der Kommentare ============

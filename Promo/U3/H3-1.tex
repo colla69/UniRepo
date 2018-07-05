@@ -1,0 +1,53 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\author{Andrea Colarieti}
+\title{Programmierung und Modellierung U3 H3-1}
+
+
+\begin{document}
+\section{Übungsblatt 3 Lösung H3-1}
+Andrea Colarieti Tosti
+\newline\newline
+
+
+\begin{lstlisting}
+\end{lstlisting}
+
+Die behandelte Funktion:
+\begin{lstlisting}
+magic :: Integer -> Integer -> Integer -> String
+magic a b c | even c, b > 0, a < 0 = 'x' : (magic (1+a) b (1+c))
+            | odd c, b > 0, a < 0 = 'y' : (magic a (b-1) (c+1))
+            | otherwise = show c
+
+\end{lstlisting}
+
+\subsection{A}
+\begin{lstlisting}
+max a+c 0
+\end{lstlisting} 
+ist keine gute abstiegsfunktion. wir zeigen es anhand von dem fall
+
+magic (-3) 2 5 = 8
+max (-3+5) 0 = 2 $ \ngtr 8$
+\newline
+\subsection{B}
+Die Funktion $ \int(x,y,z) $ hat ein Domain $ A = dom(f)$
+$ A = \mathbb{Z}\times\mathbb{Z}\times\mathbb{Z} \mapsto \mathbb{Z}$
+\newline
+$odd$ und $even$ decken alle fälle ab zusätzlich wird geprüft, ob $b > 0$ oder $a < 0$.
+Sollte $a>0$ oder $b<0$ sein, wird $c$ sofort zurückgegeben.
+Im Fall dass alle Bedingungen true ergeben, wird, bei einem geraden Wert von $c$, $a$ 
+hochgezählt oder im anderen Fall wird $b$ runtergezählt.
+Dabei wächst $c$ immer um 1.
+Als Abstiegsfunktion würde ich  max $((0-x)(0+y)+z)$ 0 nehmen.
+\newline
+Für den fall $f(x,y,z) | x = -3 , y = 2 , z = 5 \Rightarrow f(x,y,z)= 8 $
+Dagegen ist $ max ((0-3)(0+2)+5) = 11 > 8 $
+
+\end{document}

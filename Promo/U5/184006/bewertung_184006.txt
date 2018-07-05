@@ -1,0 +1,58 @@
+= Bitte nur Bewertung und Kommentare ändern =
+=============================================
+========== UniWorx Bewertungsdatei ==========
+======= diese Datei ist UTF8 encodiert ======
+Informationen zum Übungsblatt:
+Veranstaltung: Programmierung und Modellierung
+Blatt: Blatt 5
+Korrektor: Sarah Vaupel
+E-Mail: Vaupel.Sarah@campus.lmu.de
+Abgabe-Id: 184006
+Maximalpunktzahl: 6 Punkte
+=============================================
+Bewertung: 2
+=============================================
+Kommentare:
+H5-1:  2/2
+  Sehr gut!
+
+
+H5-2:  0/2
+
+  a)   0/1
+    Leider nicht korrekt.
+    
+    eintragAbschreiber ruft eintragPunkte mit 0 Punkten auf, sodass der Student in eintragPunkte
+    als Abschreiber registriert wird (das Argument Bonus wird mit Abschreiber ersetzt).
+    Gleiches geschieht aber auch, wenn einem Studenten 0 Punkte eingetragen werden, ohne dass es
+    sich um einen Abschreiber handelt:
+    
+    > let test = eintragPunkte "Ich-bin-kein-Abschreiber" 0 (eintragPunkte "Ich-bin-kein-Abschreiber" 3 leer)
+    > punkteAuslesen test
+    0
+    
+    Stattdessen kann in eintragAbschreiber der jeweilige Bonus einfach mit Abschreiber ersetzt werden:
+    eintragAbschreiber student reg = Map.insert student Abschreiber reg
+    
+    In eintragPunkte können wir uns das Leben etwas einfacher machen: wenn der Student noch nicht im Register
+    enthalten ist, fügen wir ihn hinzu. Wenn er bereits enthalten ist, passiert nichts, wenn er ein Abschreiber
+    ist, andernfalls wird die Punktzahl der Punkteliste hinzugefügt.
+    Diese drei Fälle können wir mit einem case abfangen:
+    
+    eintragPunkte student punkte ds = case Map.lookup student ds of
+      Nothing             -> Map.insert student (Punkte [punkte]) ds
+      (Just Abschreiber)  -> ds
+      (Just (Punkte pts)) -> Map.insert student (Punkte (punkte:pts)) ds
+  
+  b)   0/1
+    Fehlt.
+
+
+H5-3:  0/2
+  Nicht kompilierende Abgaben werden ab Blatt 5 ignoriert (siehe Hinweise auf der Angabe zu Blatt 5).
+  Deine Warteschlange.hs kompiliert nicht, da der Code bei der Angabe eines Moduls
+  eingerückt werden muss (d.h. alles nach "module Warteschlange (einstellen, abholen, leer) where").
+
+
+Wenn du Fragen hast kannst du mich jederzeit via Mail kontaktieren!
+============ Ende der Kommentare ============

@@ -1,0 +1,8 @@
+
+a) gcd 210 $ 28 * 2 * 3
+b) sum $ filter odd $ [2..8] ++ [6..12]
+c)($3)(*14)
+d)(foldr) ($6) (6) [(-),(*),(-),(+)]
+
+Die ersten 2 sind durch klammern lösbar weil nur ein wert übertragen wird.
+für die letzten 2 muss der functor eine funtion/operation übertragen und das können klammrn nicht.

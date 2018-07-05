@@ -1,0 +1,30 @@
+
+
+
+--a
+-- die explizite klammerung des ausdruckes
+-- ist (((const (const) (negate 1)) (negate 2)) 3)
+a = ((((const (const)) (negate 1)) (negate 2)) 3)()
+b = const const (negate 1) (negate 2) 3
+u1 = a == b -- prüfung der antwort
+
+
+
+const const (negate 1) (negate 2) 3
+(((const const) (negate 1) ) (negate 2) ) 3
+
+--b
+
+-- const const (negate 1) (negate 2) 3
+-- -> 
+-- const const ((-1)*1) ((-1)*2) 3
+-- ->
+-- const const (-1) (-2) 3
+-- ->
+-- (const [const/a] [-1/b]) (-2) 3
+-- -> 
+-- const gibt immer das erste argument aus,
+-- somit wird die funktion const zurückegeben  
+-- ->
+-- const (-2) 3 -> -2
+

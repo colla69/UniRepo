@@ -1,0 +1,87 @@
+= Bitte nur Bewertung und Kommentare ändern =
+=============================================
+========== UniWorx Bewertungsdatei ==========
+======= diese Datei ist UTF8 encodiert ======
+Informationen zum Übungsblatt:
+Veranstaltung: Programmierung und Modellierung
+Blatt: Blatt 6
+Korrektor: Sarah Vaupel
+E-Mail: Vaupel.Sarah@campus.lmu.de
+Abgabe-Id: 184929
+Maximalpunktzahl: 8 Punkte
+=============================================
+Bewertung: 8
+=============================================
+Kommentare:
+H6-1:  2/2
+  Richtig, auch wenn die Erklärung so ausgedrückt nicht ganz stimmt.
+  In c) und d) gibt es keinen Functor, der eine Funktion übertragen muss. Statt den Konstanten
+  (3) bzw. (6) werden an diesen Stellen vielmehr Funktionen erwartet. Daher muss (3) bzw. (6)
+  durch das Einfügen von $ zu einer Funktion höherer Ordnung umgewandelt werden, die daraufhin
+  auf (*14) in c) und als Argument von foldr in d) angewandt werden kann.
+
+
+H6-2:  2/2
+  Korrekt.
+  Für die anonyme Funktion (\x y -> y:x) gibt es in der Standardbibliothek übrigens bereits eine Funktion höherer Ordnung,
+  und zwar flip:
+  
+  flip :: (a -> b -> c) -> b -> a -> c
+  
+  flip nimmt eine Funktion (die zwei Elemente vom Typ a und b nimmt) sowie zwei Elemente vom Typ b und a.
+  flip wendet die Funktion also auf die beiden Elemente an, vertauscht dabei aber die Reihenfolge, z.B.:
+  
+  > flip (-) 7 3
+  -4
+  > flip (:) [2,3] 1
+  [1,2,3]
+  > foldl (flip (:)) [] [1,2,3]
+  [3,2,1]
+  
+  Man hätte myReverse also auch folgendermaßen definieren können:
+  myReverse' = foldl (flip (:)) []
+  
+  (Die Inputliste a fehlt in obenstehender Definition komplett. Ist ein Argument wie hier stets das letzte Argument (letztes Argument von
+  myReverse als auch von foldl), so kann es im punktfreien Stil in der Definition auch weggelassen werden.)
+
+
+H6-3:  2/2
+  Richtig. Zwei Anmerkungen:
+  
+  1. In mappend gibt es redundante Patterns:
+  Das Pattern "mappend Leer b" fängt beliebige Zweitlisten ab (wenn die Erstliste Leer ist) und gibt die Zweitliste aus. Insbesondere kann hierbei
+  auch b == Leer gelten! Zwei leere Inputlisten in einem Pattern davor abzufangen ("mappend Leer Leer") war daher nicht nötig.
+  Gleiches gilt für das Pattern "mappend a Leer". Man könnte sich dieses Pattern sogar komplett sparen, da leere Erstlisten in "mappend Leer b" abgefangen
+  werden, und bei nicht-leeren Erstlisten so lange Elemente der Erstliste konkateniert werden, bis die erste Liste leer ist (und wieder "mappend Leer b" greift).
+  Aus Effizienzgründen kann man das Pattern aber auch stehen lassen, da so mappend bei leeren Zweitlisten sofort terminieren kann.
+  
+  Folgende Definition für mappend deckt also bereits alle Patterns ab:
+  
+  mappend Leer           bs = bs
+  mappend (Element a as) bs = Element a (mappend as bs)
+  
+  Damit funktioniert mappend für MyLists übrigens ganz analog zu (++) für "normale" Listen [a]. Es wurde lediglich [] mit Leer und (x:xs) mit (Element x xs) ersetzt:
+  
+  (++) []     bs = bs
+  (++) (a:as) bs = a : (as ++ bs)
+  
+  2. Zu mconcat:
+  mconcat besitzt bereits eine Defaultimplementierung. Da mappend in unserem Fall kommutativ ist und foldl und foldr gleiche Resultate liefern, wenn die übergebene
+  Funktion kommutativ ist, ist deine Implementierung von mconcat äquivalent zur Defaultdefinition:
+  
+  mconcat = foldr mappend mempty
+  
+  Du hättest mconcat also gar nicht selbst definieren müssen. Dies würde nur dann Sinn machen, wenn man händisch optimieren könnte.
+  Bei Instanzdeklarationen müssen im Allgemeinen nur diejenigen Funktionen implementiert werden, für die es keine Defaultimplementierung gibt.
+  Für Monoid-Instanzdeklarationen sind das lediglich mempty und mappend.
+  Ein anderes Beispiel: Die Typklasse Foldable enthält wesentlich mehr Funktionen als nur foldMap (foldr, foldl, elem, length, ...). Diese müssen bei einer
+  Foldable-Instanzdeklaration aber nicht allesamt händisch implementiert werden, da alle Funktionen außer foldMap sinnvolle Defaultimplementierungen besitzen,
+  die allesamt auf foldMap zurückgreifen. Daher muss bei Foldable-Instanzdeklarationen nur foldMap implementiert werden (siehe A7-1b).
+  
+
+H6-4:  2/2
+  Einwandfrei!
+
+
+Wenn du Fragen hast kannst du mich jederzeit via Mail kontaktieren.
+============ Ende der Kommentare ============

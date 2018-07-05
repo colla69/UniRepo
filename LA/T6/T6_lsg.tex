@@ -1,0 +1,249 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Andrea Colarieti Tosti}
+\title{Lineare Algebra Tutorium 6 Lösung}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Aufgabe 1}
+$\cdot : \mathbb{R}^2 \mapsto \mathbb{R}^2,(x_{1},x_{2})\mapsto(x_{1}x_{2}-y_{1}y_{2} , x_{1}y_{2}+x_{2}y_{1})$
+\subsection{i}
+zz: \\(1,0) ist das neutrale Element von $(\mathbb{R}^{2}\setminus\{0,0\}, \cdot)$\\
+Beweis:\\
+Seien $v, w \in (\mathbb{R}^2\setminus\{0,0\}) $, 
+$ v:=(a,b)$ und $w:=(c,d)$ und sei $e_{n} = (1,0)$ das neutrale Element von $(\mathbb{R}^2\setminus\{0,0\}, \cdot) \Rightarrow (v \cdot e_{n}) = v$  \\
+\begin{equation*}
+(a,b) \cdot (1,0) = (a\cdot1-b\cdot0 , a\cdot0+b\cdot1) = (a-0,0+b)=(a,b) 
+\end{equation*}
+\begin{flushright}
+\checkmark
+\end{flushright}
+\subsection{ii}
+zz: 
+\begin{equation*}
+(\frac{x}{x^2+y^2},\frac{-y}{x^2+y^2})
+\end{equation*}
+ist das inverse Element für $(x,y)\in(\mathbb{R}^2\setminus\{(0,0)\},\cdot)$\\\\
+Beweis:\\
+Sei $v = (\frac{x}{x^2+y^2},\frac{-y}{x^2+y^2})$ und $w = (x,y) \Rightarrow v \cdot w = (1,0) \Rightarrow $\\
+$(\frac{x}{x^2+y^2},\frac{-y}{x^2+y^2})\cdot(x,y)$\\
+$\Rightarrow(\frac{x}{x^2+y^2}\cdot x-\frac{-y}{x^2+y^2}\cdot y,\frac{x}{x^2+y^2}\cdot y+\frac{-y}{x^2+y^2}\cdot x) $ \\
+$\Rightarrow(\frac{x^2}{x^2+y^2}+\frac{y^2}{x^2+y^2},\frac{xy}{x^2+y^2}+\frac{-yx}{x^2+y^2})\Rightarrow(\frac{x^2+y^2}{x^2+y^2},0)=(1,0)$
+\begin{flushright}
+\checkmark
+\end{flushright}
+\subsection{iii}
+zz: $\forall (x_{1},y_{1})$, $(x_{2},y_{2})$, $(x_{3},y_{3})$, mit $x_{1},y_{1},x_{2},y_{2},x_{3},y_{3} \in (\mathbb{R}) $,  gilt:\\
+$(x_{1},y_{1})((x_{2},y_{2}) + (x_{3},y_{3})) = $ 
+$(x_{1},y_{1}) \cdot (x_{2},y_{2}) + (x_{1},y_{1}) \cdot (x_{3},y_{3})$\\\\
+Beweis:\\
+Linke Seite:\\
+$(x_{1},y_{1})((x_{2},y_{2}) + (x_{3},y_{3})) = (x_{1},y_{1})((x_{2}+,x_{3},y_{2}+y_{3})) =$\\
+$= (x_{1}\cdot (x_{2}+,x_{3})-y_{1}\cdot (y_{2}+y_{3})$ , $x_{1}\cdot (y_{2}+y_{3})+y_{1}\cdot (x_{2}+,x_{3})) $ \\
+Rechte Seite:\\
+$((x_{1},y_{1})(x_{2},y_{2})) + (x_{3},y_{3}) = $ \\
+$(x_{1},y_{1})(x_{2},y_{2})+(x_{1},y_{1})(x_{3},y_{3}) =$ \\
+$(x_{1},x_{2}-y_{1},y_{2}$ , $x_{1},y_{2}+x_{2},y_{1})+(x_{1},x_{3}-y_{1},y_{3}$ , $x_{1},y_{3}+x_{3},y_{11}) =$\\
+$ ( x_{1},x_{2}-y_{1},y_{2}+x_{1},x_{3}-y_{1},y_{3}$ , $x_{1},y_{2}+x_{2},y_{1} 
++x_{1},y_{3}+x_{3},y_{1}) $
+\begin{flushright} \checkmark \end{flushright}
+
+\newpage
+\section{Aufgabe 2}
+$ \phi: U_{M} \rightarrow  U_{M} , \forall A \in U_{M}: \phi(A)\mapsto S^{-1}AS$ mit $S \in U_{M}$ und $U_{M}, U_{N} \in GL(n,\mathbb{K})$ \\ 
+Wir müssen beweisen, dass $\phi$ linear ist und, dass es sich um eine Bijektion handelt.\\
+Beweis: \\
+\begin{enumerate}
+\item $\phi$ ist Linear
+\item $\phi$ ist Injektiv
+\item $\phi$ ist Surjektiv
+\end{enumerate}
+\paragraph{1}
+Seien $A,B \in U_{M} \Rightarrow \phi(A+B)=\phi(A) + \phi(B) $\\\\
+$ \Rightarrow \phi(A+B) \underset{DEF \phi}{=} S^{-1}(A+B)S \underset{Mult. GL(n,\mathbb{K})}{=} (S^{-1}A+S^{-1}B)S =$\\\\
+$(S^{-1}AS+S^{-1}BS) \underset{Add. GL(n,\mathbb{K})}{=} (S^{-1}AS)+(S^{-1}BS) $
+$ \Rightarrow \phi(A) + \phi(B)$\begin{flushright} \checkmark \end{flushright}
+
+\paragraph{2} 
+Seien $A,B \in U_{M} \Rightarrow$ wir nehmen an, dass\\
+$ \phi(A) = \phi(B) \underset{Def.\phi}{\Rightarrow} (S^{-1}AS)=(S^{-1}BS)$ \\\\
+$ \underset{Mul. GL(n,\mathbb{K})}{\Rightarrow} S(S^{-1}AS)=S(S^{-1}BS) $
+$ \underset{Mul. GL(n,\mathbb{K})}{\Rightarrow} (SS^{-1}AS)=(SS^{-1}BS) $\\\\
+$ \underset{Invers}{\Rightarrow} (AS)=(BS)$
+$ \underset{Mul. GL(n,\mathbb{K})}{\Rightarrow} (AS)S^{-1}=(BS)S^{-1} $
+$ \underset{Mul. GL(n,\mathbb{K})}{\Rightarrow} A=B $
+\begin{flushright} \checkmark \end{flushright}
+A und B sind gleich also ist $\phi$ Injektiv.
+
+\paragraph{3} 
+$\phi$ ist offenbar Surjektiv. Denn sei $B\in U_{N}: B=S^{-1}AS$ mit $ A,S\in U_{M} $\\
+sind A und S frei Wählbar und es gilt stets $\phi(A)=S^{-1}AS=B $
+\begin{flushright} \checkmark \end{flushright}
+
+Somit ist $\phi$ Linear und Bijektiv und ein Gruppenisomorphismus zwischen den Untergruppen 
+$U_{M}$ und $U_{N} $\\ \begin{flushright} $\hfill \Box$ \end{flushright}
+
+\newpage
+\section{Aufgabe 3}
+\subsection{a}
+$ V=W=\mathbb{R}^2$ \\$$f_{1}:\mathbb{R}^2 \rightarrow \mathbb{R}, f_{1}(x,y)\mapsto (7x+14y-1,x+2y+5)$$\\wir untersuchen $f_{1}$ auf:
+\begin{enumerate}
+\item Linearität
+\item Injektivtät
+\item Surjektivtät
+\end{enumerate}
+\paragraph{1}
+seien $ v,w\in \mathbb{R}^2 $ \\
+$ v:=(a,b) , w:(=c,d)$ mit $ a,b,c,d \ \in \mathbb{R}$\\
+zz: \\$\bullet $ $f_{1}(v,w)=f_{1}(v)+f_{1}(w)$  \\$\bullet $ $a\cdot f_{1}(v) = f_{1}(a\cdot v)$
+\subparagraph{$\bullet $ $f_{1}(v,w)=f_{1}(v)+f_{1}(w)$} .\\
+$ f_{1}(v+w) = f_{1}(a+c , b+d) = (7(a+c)+14(b+d)-1, (a+c)+2(b+d)+5)$\\
+$ = (7a+7c+14a+14c-1,a+c+2b+2d+5) $
+\subparagraph{$\bullet$ $a\cdot f_{1}(v) = f_{1}(a\cdot v)$} .\\
+$ f_{1}(a)+f_{1}(b)=(7a+14b-1,a+2b+5) + (7c+14d-1,c+2d+5) $\\
+$ =(7a+14b-1+7c+14d-1,a+2b+5+c+2d+5) $\\\\
+$f$ ist nicht linear.
+\paragraph{2}
+Seien $v:=(a,b)$ mit $a,b,c,d\in \mathbb{R}$ und sei $c=(7a+14b-1,a+2b+5)$ sind a und b frei auswählbar.\\Da $\forall a,b\in \mathbb{R} $ gilt $\Rightarrow f(a,b)=(7a+14b-1,a+2b+5)=c$ \\
+Somit ist $f_{1}$ surjektiv.
+\paragraph{3}
+Seien $v= (a,b)$ und $w=(c,d)$ mit $a,b,c,d \in \mathbb{R}$.\\
+$\Rightarrow f_{1}(v)=f_{1}(w) \Rightarrow (7a+14b-1,a+2b+5)=(7c+14d-1,c+2d+5)$\\
+\begin{enumerate}
+\item $7a+14b-1 = 7c+14d-1 \Rightarrow 7a+14b = 7c+14d \Rightarrow a+2b=c+2d \Rightarrow a=c \wedge b=d$\checkmark
+\item $a+2b+5 = c+2d+5 \Rightarrow a+2b = c+2d \Rightarrow a=c \wedge b=d$\checkmark\\
+\end{enumerate}
+$f_{1}$ ist injektiv.\\\\
+\noindent 
+$f_{1}$ ist injektiv und surjektiv und somit ein isomorphismus von $\mathbb{R}$-Vektorräume.
+\newpage
+\subsection{b}
+Seien $ A,B \in \mathbb{R}^2$ und $ \lambda \in \mathbb{R}$ \\$V=W=\mathbb{R}^2$ \\ 
+$$ f_{2}:\mathbb{R}^2 \rightarrow \mathbb{R}, f_{2}(A)\mapsto (AB) \; mit \; B=
+\begin{pmatrix} 
+0 & 1 \\
+1 & 0 
+\end{pmatrix} 
+$$ 
+wir untersuchen $f_{2}$ auf:\\
+\begin{enumerate}
+\item Linearität
+\item Injektivtät
+\item Surjektivtät
+\end{enumerate}
+Beweis:
+\paragraph{1} ZZ:\\$ \bullet$ $f_{2}(A+B)=f_{2}(A)+f_{2}(B)$ \\$ \bullet$ $\lambda f_2(A)=f_2(\lambda A)$
+\subparagraph{$ \bullet$ $f_{2}(A+B)=f_{2}(A)+f_{2}(B)$ }
+Seien $ A,B \in \mathbb{R}^2$ mit 
+$$A:= \begin{pmatrix}a & b\\c&d\end{pmatrix}\; \text{ , } \;B:= \begin{pmatrix}e&f\\g&h\end{pmatrix}$$
+$$f_2(A+B)\underset{\text{def} f_2}{=} f_2\begin{pmatrix}a+e & b+f\\c+g&d+h\end{pmatrix} \begin{pmatrix} 0 & 1 \\1 &0\end{pmatrix} \underset{Matrix Mult.}{=} \begin{pmatrix}b+f&a+e\\d+h & c+g\end{pmatrix}$$\\ 
+$$ \underset{Matrix Add.}{=} \begin{pmatrix}a & b\\c&d\end{pmatrix} +\begin{pmatrix}e&f\\g&h\end{pmatrix} 
+\underset{Matrix Mult.}{=} \begin{pmatrix}a & b\\c&d\end{pmatrix} \begin{pmatrix} 0 & 1 \\1 &0\end{pmatrix} + \begin{pmatrix}e&f\\g&h\end{pmatrix} \begin{pmatrix} 0 & 1 \\1 &0\end{pmatrix}$$
+$\underset{\text{def} f_2}{=} f_2(A)+f_2(B)$  \begin{flushright} \checkmark \end{flushright}
+\subparagraph{$ \bullet$ $\lambda f_2(A)=f_2(\lambda A)$}
+$$ \text{Sei}\; A=\begin{pmatrix}a & b\\c&d\end{pmatrix} $$
+$\Rightarrow \lambda f_2\begin{pmatrix}a & b\\c&d\end{pmatrix}=\lambda \; 
+\left( \begin{pmatrix}a & b\\c&d\end{pmatrix}\begin{pmatrix}0 & 1\\1&0\end{pmatrix} \right)= $
+$ \lambda \; \begin{pmatrix}b &a\\d&c\end{pmatrix} = 
+\begin{pmatrix}\lambda b &\lambda a\\\lambda d&\lambda c\end{pmatrix}= $\\
+$= \begin{pmatrix}\lambda a &\lambda b\\\lambda c&\lambda d\end{pmatrix}\begin{pmatrix}0 & 1\\1&0\end{pmatrix} = f_2(\lambda A) $  \begin{flushright} \checkmark \end{flushright}
+$f_2$ ist linear.
+
+\paragraph{2}
+Sei $ C:=A\begin{pmatrix}0 & 1\\1&0\end{pmatrix} $, $ \exists A \in \mathbb{R}^2:f_2(A)=C $\\
+Denn A frei wählbar ist ist $f_2$ surjektiv.
+\paragraph{3}
+Seien $A:= \begin{pmatrix}a & b\\c&d\end{pmatrix}\; \text{ , } \;B:= \begin{pmatrix}e&f\\g&h\end{pmatrix}$ \\\\
+Wir nehmen an, dass $ f_2(A) = f_2(B) $\\\\
+$ f_2(A) = f_2(B) = f_2 \begin{pmatrix}a & b\\c&d \end{pmatrix} = f_2\begin{pmatrix}e&f\\g&h\end{pmatrix} \Rightarrow \begin{pmatrix}a & b\\ c&d \end{pmatrix} \begin{pmatrix}0&1\\1&0\end{pmatrix} = \begin{pmatrix}e&f\\g&h\end{pmatrix}\begin{pmatrix}0 & 1\\1 & 0 \end{pmatrix}$\\
+$\Rightarrow \begin{pmatrix}b & a\\ d&c \end{pmatrix} = \begin{pmatrix}f&e\\h&g\end{pmatrix} \Rightarrow$ $b=f\;\;\; a=e\;\;\; d=h\;\;\; c=g$ \begin{flushright} \checkmark \end{flushright}
+$f_2$ ist Injektiv.\\\\
+$f_2$ ist bijektiv und somit ein isomorphismus von $\mathbb{R}$-Vektorräume.
+$$\begin{matrix}
+\end{matrix}$$
+\newpage
+\section{Aufgabe 4}
+V und W sind $\mathbb{C}$-VR.\\
+\begin{equation*}
+\oplus : (V\times W) \rightarrow (V\times W) , (v_1,v_2) \oplus (w_1,w_2) \mapsto (v_1+v_2,w_1+w_2) 
+\end{equation*}
+\begin{equation*}
+* :  \mathbb{C}\times (V\times W) \rightarrow (V\times W) , \lambda * (v_1,v_2) \mapsto (\lambda v_1,\overline{\lambda} v_1) 
+\end{equation*}
+zz: $\forall\; v,w \in (V\times W)$, $\lambda, \mu \in \mathbb{C}$ gilt:
+\begin{enumerate}
+\item $\oplus$ bildet eine abelsche Gruppe 
+\item $\lambda *(v \oplus w) = (\lambda *v ) \oplus (\lambda * w)  $
+\item $(v \oplus w)*\lambda = (v*\lambda ) \oplus (w*\lambda)  $
+\item $(\lambda * \mu )*v = \lambda *(\mu *v)$
+\item $ \exists\; \lambda \in C : \lambda*v = v $, $v \in (V \times W)$
+\end{enumerate}
+
+\paragraph{1} zz :
+$\forall\; u,v,w \in (V\times W)$\\\\
+$\bullet $ $ u \oplus (v \oplus w) = (u \oplus v) \oplus w$\\
+$\bullet $ $ \exists\; v \in V : v \oplus w = w \in V$\\
+$\bullet $ $ \exists \; v \in V : -v \oplus v = 0_v $\\
+$\bullet $ $ (v \oplus w) = (w \oplus v)$\\\\
+\subparagraph{$\bullet $ $ u \oplus (v \oplus w) = (u \oplus v) \oplus w$}
+$$\text{Seien } u= (a,b) \: v=(b,c) \; w=(e,f) \text{ mit } a,b,c,d,e,f \in \mathbb{R}$$
+$$ u \oplus (v \oplus w) = u \oplus (c+e,d+f) = (c+e+a,d+f+b)$$
+$$ (u \oplus v) \oplus w = (a+c,b+d) \oplus w = (a+c+e,b+d+f)$$
+\begin{flushright} \checkmark \end{flushright}
+\subparagraph{$\bullet $ $ \exists\; v \in V : v \oplus w = w \in V$}
+$$ \text{Sei } v = (0,0) \;\; w = (a ,b) \Rightarrow v \oplus w = 0_v $$
+$$ (0,0) \oplus (a,b) = (0+a,0+b) = (a+b) $$
+\begin{flushright} \checkmark \end{flushright}
+\subparagraph{$\bullet $ $ \exists \; v \in V : -v \oplus v = 0_v $}
+$$ \text{Sei } v = (a,b) \;\; \text{wir suchen ein } w:=(w_1,w_2) \text{ sodass } v \oplus w = 0_v$$
+$$ (a,b) \oplus w = 0_v \text{wir beobachten das LGS:}$$
+$$ a + w_1 = 0 \Rightarrow w_1 = -a $$
+$$ b + w_2 = 2 \Rightarrow w_2 = -b $$
+$$\Rightarrow \text{ w = (-a, -b) }$$
+\begin{flushright} \checkmark \end{flushright}
+\subparagraph{$\bullet $ $ (v \oplus w) = (w \oplus v)$}
+$$ \text{Seien } v = (a,b) \; w = (c,d) $$
+$$ v \oplus w = (a+c,b+d)$$
+$$ w \oplus v = (c+a, d+b)$$ 
+\begin{flushright} \checkmark \end{flushright}
+$\oplus$ bildet eine abelsche Gruppe über $((V\times W), \oplus)$.
+
+\paragraph{2}
+Seien $ v= (a,b) \; \lambda \in \mathbb{R}$\\
+zz: $\lambda *(v \oplus w) = (\lambda *v ) \oplus (\lambda * w) $\\\\
+$ \lambda * (v \oplus w) \underset{Def}{=} \lambda * ((a,b)\oplus (c,d)) \underset{Def \oplus}{=} \lambda *((a+c, b+d)) \underset{Def *}{=}$\\\\
+$ (\lambda(a+c), \overline{\lambda}(b+d)) \underset{Distrib.Ges.*}{=}((\lambda a+\lambda c), (\overline{\lambda}b+\overline{\lambda}d))= $\\
+$ (\lambda a, \overline{\lambda}b) \oplus (\lambda c,\overline{\lambda}d) = (\lambda *v ) \oplus (\lambda * w) =$
+\begin{flushright} \checkmark \end{flushright}
+
+\paragraph{3}
+Seien $v =( a,b), \; w=(c,d), \, \lambda \in \mathbb{C}$\\
+$(v \oplus w) * \lambda = (a+c,b+d)*\lambda = (a \lambda+c \lambda ,b\overline{\lambda}+d \overline{\lambda}) =$
+$(c \lambda ,d \overline{\lambda}) \oplus (a \lambda,b\overline{\lambda}) =(v*\lambda ) \oplus (w*\lambda)$
+\begin{flushright} \checkmark \end{flushright}
+
+\paragraph{4}
+Seien $ \lambda,\mu,a,b \in \mathbb{C}, \; v = (a,b), \; V \in (V\times W)$\\
+$ \lambda*(\mu*v)=\lambda*(\mu a,\overline{\mu}b) = (\lambda \mu a, \overline{\lambda\mu} b)$\\
+$(\lambda * \mu )*v = (\lambda\mu)*(a,b)=(\lambda\mu a, \overline{\lambda\mu} b)$
+\begin{flushright} \checkmark \end{flushright}
+
+\paragraph{5}
+Seien $v=(a,b) \; \lambda = 1$\\
+zz: $ \exists\; \lambda \in C : \lambda*v = v $, $v \in (V \times W)$\\
+$\lambda * v = 1 * (a,b) = (1*a, \overline{1}*b))= (a,b) $
+\begin{flushright} \checkmark \end{flushright}
+
+$(V\times W, \oplus ,*)$ ist ein $\mathbb{C}$-VR.
+ \begin{flushright} $\hfill \Box$ \end{flushright}
+
+\end{document}
+
+
+

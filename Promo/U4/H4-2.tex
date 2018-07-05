@@ -1,0 +1,48 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\author{Andrea Colarieti}
+\title{ProMo Übung 4 H4-2 Lösung}
+
+
+\begin{document}
+\maketitle
+
+H4-2 Induktion mit Listen II
+(2 Punkte; Abgabe: H4-2.txt oder H4-2.pdf)
+Es sei vs und ws zwei beliebige Listen, weiterhin sei $n = |vs|$. Beweisen
+Sie mit Induktion über die Länge $n \in \mathbb{N}$ von vs, dass zip vs ws = min(vs, ws) gilt.
+\newline
+\begin{lstlisting}
+zip :: [a] -> [b] -> [(a,b)]
+zip 	[] 	 _   = []
+zip 	_  	 []  = []
+zip (x:xs) (y:ys)  = (x,y) : zip xs ys
+\end{lstlisting}
+
+\section{Lösung}
+Seien vs und ws 2 Listen mit Länge n und m, $n \in \mathbb{N}$ und $m \in \mathbb{N}$.
+\newline
+Ind. Annahme: 
+Das Verhalten der Funktion zip ändert sich nicht beim Wachsen der länge der Liste im ersten parameter. \newline Also gilt zip vs ws = min (n+1,m)  $\forall n+1 \in \mathbb{N} $ 1mit $ n + 1 \leq m$
+\newline\newline
+Sei n = 0 $\Rightarrow$
+\newline 
+zip [ ] ws = [ ]\newline
+$\Leftrightarrow$min(0,m) = 0 
+\newline\newline
+Ind Anfang: $n = 1 $\newline
+zip a:[ ] (b:ws) $\Rightarrow$\newline (a,b): zip [ ] (c:ws) $\Rightarrow$\newline (a,b):[ ] = (a,b)\newline
+$\Leftrightarrow$min(1, m) + min(0,m) = 1 + 0
+\newline\newline
+Ind. Schritt: $n \mapsto n + 1 $\newline 
+zip (a:vs) (b:ws) $\Rightarrow$\newline (a,b):zip (c:vs) (d:ws) $\Rightarrow$\newline (a,b):(c,d):zip (e:vs) (f:ws) = (a,b):(c,d):...:zip [ ] (f:ws) = \newline (a,b):(c,d):(e,f):.....:[ ]\newline
+$\Leftrightarrow$min(n, m) + min(1,m) + min(0,m) = n + 1 + 0 = n + 1 \newline
+\begin{flushright}
+\hfill $\square$
+\end{flushright}
+\end{document}

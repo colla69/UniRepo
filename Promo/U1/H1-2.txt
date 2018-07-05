@@ -1,0 +1,9 @@
+--Das logische operator für AND ist &&
+-- das hier ist die And-Wahrheitstafel
+-- wir erwaarten das AND Wahrheitstafel schema (T,F,F,F)
+hausaufgabeUnd = [ a&&b | a <-[True,False], b <- [True,False]]
+
+-- Das logische operator für ODER ist ||
+-- das hier ist die And-Wahrheitstafel
+-- wir erwaarten das ODER Wahrheitstafel schma (T,T,T,f)
+hausaufgabeUnd = [ a||b | a <-[True,False], b <- [True,False]]

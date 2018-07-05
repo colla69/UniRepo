@@ -1,0 +1,183 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\author{Andrea Colarieti Tosti}
+\title{Tutorium 9 Lösung}
+
+
+\begin{document}
+\maketitle 
+\newpage
+
+\section{Aufgabe 1}
+\subsection{i}
+Seien V,W K-Vektoräume und $\phi$ eine lineare abbildung, $\phi: V \rightarrow W$ und B:=$\{b_1,...,b_n\}$ eine Basis von V.\\
+Zu zeigen ist, dass sei $\phi$ bijektiv $\Rightarrow$ $\phi(B)$ ist eine Basis von W.\\\\
+Da die B eine Basis von V ist, wissen wir, dass sei $v \in V$ beliebig gewählt, es ist immer möglich diesen Vektor als LK von Vektoren aus B darstellbar: Also seien $\lambda_1,...,\lambda_n \in K$
+$$ v = \lambda_1 b_1+...+\lambda_n b_n$$
+Sei jetzt v so definiert, dass $\phi(v)= w$ mit $w \in W$. 
+$$ v = \lambda_1 b_1+...+\lambda_n b_n$$
+$$\Rightarrow \phi(v) = \phi(\lambda_1 b_1+...+\lambda_n b_n)$$
+$$ \underset{\text{DEF v}}{\Rightarrow}  w = \phi(\lambda_1 b_1+...+\lambda_n b_n)$$
+$$ \underset{\phi \text{ linear}}{\Rightarrow}  w = \phi(\lambda_1 b_1)+...+\phi(\lambda_n b_n)$$
+$$ \underset{\phi \text{ linear}}{\Rightarrow}  w = \lambda_1\phi(b_1)+...+\lambda_n\phi(b_n)$$
+Also ist jeder Vektor aus W als LK von Vektoren aus $\phi(B)$ darstellbar, und da $\phi$ bijektiv wissen wir dass die 
+Vektoren aus $\phi(B)$ voneinander unterschieldich sein müssen, und somit linear unabhängig.\\
+Denn sei $\phi(0_v)=0_w$,  $0_w = \lambda_1\phi(b_1)+...+\lambda_n\phi(b_n) $ folgt:
+$$ 0_w = \phi(\lambda_1 b_1)+...+\phi(\lambda_n b_n) $$
+$$ \phi(0_v) = \phi(\lambda_1 b_1+...+\lambda_n b_n) $$
+$$ 0_v = \lambda_1 b_1+...+\lambda_n b_n $$
+Und daraus ist klar ersichtlich dass nur die triviale lösung möglich ist.
+\subsection{ii}
+Sei $\phi$ Surjektiv können wir nicht mehr behaupten, dass die davon abgebildeten Vektoren sich alle untereinander unterscheiden. Das würde dazu führen dass der bei dem Beweis von vorhin wir keine sinnvolle möglichkeit mehr gehabt hätten, auf die lineare Unabhängigkeit der Elemente aus $\phi(B)$ prüfen können, da aus 2 basis Vektoren aus V das gleiche Vektor aus W dargestellt werden kann, und dieser nicht mal unbedingt in der basis liegen müsste.\\\\
+Sei $\phi$ Injektiv, muss die Basis von W gar nicht erst im Bild von $\phi$ enthalten sein, es gibt also ohne weitere 
+Einschränkung keine Möglichkeit zu wissen ob die Basis von W überhaupt abgebildet wird.
+\subsection{iii}
+Sei $\phi$ nicht linear und seien V und W = $\mathbb{R}^3$.\\
+Definieren wir $\phi: V \rightarrow W,\; v \mapsto 
+\begin{pmatrix}
+-1&-1&-1&\\1&1&1&\\1&1&1&
+\end{pmatrix} v +\begin{pmatrix}
+1\\0\\1\end{pmatrix}$.\\
+Sei $\lambda \in \mathbb{R}$ und $v = \begin{pmatrix}v_1\\v_2\\v_3\end{pmatrix}$\\
+$$\lambda \phi(v) \neq \phi(\lambda v) $$
+
+$$
+\lambda \left(\begin{pmatrix}
+-1&-1&-1&\\1&1&1&\\1&1&1&
+\end{pmatrix} 
+\begin{pmatrix}v_1\\v_2\\v_3\end{pmatrix}
+ +\begin{pmatrix}
+1\\0\\1\end{pmatrix}\right)
+\neq 
+\begin{pmatrix}
+-1&-1&-1&\\1&1&1&\\1&1&1&
+\end{pmatrix} 
+\begin{pmatrix}\lambda v_1\\\lambda v_2\\\lambda v_3\end{pmatrix}
+ +\begin{pmatrix}
+1\\0\\1\end{pmatrix}
+$$
+
+$$
+\left(\begin{pmatrix}
+-\lambda&-\lambda&-\lambda&\\\lambda&\lambda&\lambda&\\\lambda&\lambda&\lambda&
+\end{pmatrix} 
+\begin{pmatrix}\lambda v_1\\\lambda v_2\\\lambda v_3\end{pmatrix}
+ +\begin{pmatrix}
+\lambda\\0\\\lambda\end{pmatrix}\right)
+\neq 
+\begin{pmatrix}
+-1&-1&-1&\\1&1&1&\\1&1&1&
+\end{pmatrix} 
+\begin{pmatrix}\lambda v_1\\\lambda v_2\\\lambda v_3\end{pmatrix}
+ +\begin{pmatrix}
+1\\0\\1\end{pmatrix}
+$$ 
+Also tatsächlich linear unabhängig.\\
+Jetzt Prüfen wir mit einer Basis aus $\mathbb{R}^3$\\
+Sei $B:=\{(1,0,0),(0,1,0),(0,0,1) \}$ eine Basis von $\mathbb{R}^3$.\\
+$$ 
+\phi(1,0,0) = 
+\begin{pmatrix}-1\\1\\1 \end{pmatrix}+
+\begin{pmatrix}1\\0\\1 \end{pmatrix} =
+\begin{pmatrix} 0\\1\\2 \end{pmatrix}
+$$
+$$ 
+\phi(,10,0) = 
+\begin{pmatrix}-1\\1\\1 \end{pmatrix}+
+\begin{pmatrix}1\\0\\1 \end{pmatrix} =
+\begin{pmatrix} 0\\1\\2 \end{pmatrix}
+$$$$ 
+\phi(0,0,1) = 
+\begin{pmatrix}-1\\1\\1 \end{pmatrix}+
+\begin{pmatrix}1\\0\\1 \end{pmatrix} =
+\begin{pmatrix} 0\\1\\2 \end{pmatrix}
+$$
+Die Menge $\{(0,1,2),(0,1,2),(0,1,2)\}$ ist eindeutig nicht linear Abhängig.
+
+\section{Aufgabe 2}
+\subsection{i}
+Die Vektoren sind linear Abhangig. \\
+$$ 0 = 1(1,1)+(-2i)(2i,2i)$$
+$fam_i = \{1,-2i\}$
+\subsection{ii}
+Ein Vektor ist linear Unabhangig, da $\lambda(2+o,3-i,4-2i)=0$ nur durch $\lambda = 0$ lösbar ist. 
+\subsection{iii}
+Die Vektoren sind linear unabhängig.
+\subsection{iv}
+Die Vektoren sind nicht linear Unabhängig.\\
+$fam_{iv}=\{\frac{5}{2},-\frac{3}{2},-1 \}$
+$$\begin{pmatrix}
+5&1&11\\7&-1&19\\3&5&0
+\end{pmatrix}\begin{pmatrix}
+\frac{5}{2}\\-\frac{3}{2} \\ -1
+\end{pmatrix} =
+\begin{pmatrix}
+\frac{5}{2}5-\frac{3}{2}-11\\\frac{5}{2}7+\frac{3}{2}-19\\\frac{5}{2}3-\frac{3}{2}5-0
+\end{pmatrix} = 0$$
+\section{Aufgabe 3}
+\subsection{i}
+Da $V_1 = \mathbb{R}^3$ offensichtlich die dimension 3 hat. Also ist ein der Drei Vektoren aus $S_1$ als lineare Kombination der anderen 3 Darstellbar.\\
+Wir versunchen den Vektor $v_1 \in S_1$ als LK von den Vektoren aus $S_1\setminus\{v1\}$.\\
+$$\begin{pmatrix}
+	1&1&1\\3&0&-4\\3&0&-1
+  \end{pmatrix}x = 
+  \begin{pmatrix}   
+  	1\\2\\5 
+  \end{pmatrix}
+$$
+$$\left(\begin{matrix}
+		1 & 1 & 1 \\
+		3 & 0 & -4\\
+		3 & 0 & -1
+  \end{matrix} \left|
+  \begin{matrix}
+   	1 \\ 2\\ 5 	
+  \end{matrix}\right)\right.
+  \Rightarrow
+  \left(\begin{matrix}
+		1 & 1 & 1 \\
+		0 & -3 & -7\\
+		0 & -3 & -4
+  \end{matrix} \left|
+  \begin{matrix}
+   	1 \\ -1\\ 2 	
+  \end{matrix}\right)\right.
+  \Rightarrow
+  \left(\begin{matrix}
+		1 & 1 & 1 \\
+		0 & 0 & -3\\
+		0 w& -3 & -4
+  \end{matrix} \left|
+  \begin{matrix}
+   	1 \\ -3\\ 2 	
+  \end{matrix}\right)\right.
+$$
+$-3 x_3 = -3 \Rightarrow x_3= 1$\\
+$-3 x_2 -4 = 2 \Rightarrow x_2 = \frac{6}{-3}=-2$\\
+$x_1 -2 +1 = 1 \Rightarrow x_1 = 1+2-1=2$\\
+Also ist unsere Lösung $x= \begin{pmatrix}2\\-2\\1\end{pmatrix}$
+$$\begin{pmatrix}
+	1&1&1\\3&0&-4\\3&0&-1
+  \end{pmatrix}
+ \begin{pmatrix}2\\-2\\1\end{pmatrix}  = 
+\begin{pmatrix}
+2-2+1\\
+6+0-8\\
+6+0-1
+\end{pmatrix} =
+  \begin{pmatrix}   
+  	1\\2\\5 
+  \end{pmatrix}
+$$
+\subsection{ii}
+Da $S_2$ eine Ebene beschreibt, $dim(V_2)=2$, ist es keine Basis von $V_2=\mathbb{R}^3$.\\
+Wir brauchen eine Basis der Dimension 3, dafür fehlt es einen Vektor $v_3 = \begin{pmatrix}0\\0\\1\end{pmatrix}$.\\
+Sei $S:= \{ \}
+\subsection{iii}
+\end{document}

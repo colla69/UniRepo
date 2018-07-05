@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\author{Andrea Colarieti Tosti}
+\title{Lineare Algebra Tutorium 7 Lösung}
+
+
+\begin{document}
+\maketitle \newpage
+
+\section{Aufgabe 1}
+\subsection{i}
+Da $lin(T) = lin(S) = \sum_{k = 1}^{n} \lambda_k v_k$, ist ese leicht daraus zu erkennen dass die zwei Untervektorräume die gleiche Basis $ B_S = B_T = \{v_1,...,v_n\}$.\\
+Da der Austauschsatz sagt: Sei $U\subseteq V$ und V ein K-Vektorraum, gibt es eine mengen linear unabhängige vektoren $v_1,...,v_n, n \in \mathbb{N}$, die die Basis von V $B_V = \{v_1,...,v_n\}$ bilden.\\
+Und es gibt eine menge $B_U:=\{u_1,...,u_m\}$ mit $1\leqslant m < n, m \in \mathbb{N}$ basis von U, sodass $ B_V = \{u_1,...,u_m,v_{m+1},...,v_n \} $.\\
+Merken wir dass die Vektoren aus den Basen von S und T genau die selben sind und daher die Untervektorräume gleich sind.
+\subsection{ii}
+Da $ S \subseteq T \subseteq V $ können wir den obergenannten Austauschsatz anwenden und die folgende Aussage treffen:\\
+Seien die Basen von S und T bzw. $ B_S := \{s_1,...,s_n\},\; B_T := \{t_1,...,t_m\}$ und die Basis von V: $B_V:=\{v_1,...,v_l \}$ mit $ 1\leq n \leq m < l $ und $ l,m,n \in \mathbb{N}$, können wir geauso sagen, dass $ B_V:=\{s_1,...,s_n,t_{n+1},...,t_m,v_{m+1},...,v_l \}$.\\
+Es lässt sich folgern, dass $lin(S)= \sum_{k = 1}^{n} \lambda_k s_k \subseteq lin(T) =  \sum_{k = 1}^{m} \lambda_k t_k $
+\section{Aufgabe 2}
+\subsection{i}
+Da $\phi$ eine lineare abbildung mit der eigenschaft $\phi \circ \phi = \phi$ können wir ohne Zweifel sagen, dass $(\phi \circ \phi) (x) = \phi( \phi (x) ) = \phi (x) = x $ also ist das durch $\phi$ abgebildete Wert immer unverändert. Daraus folgt $ Bild(\phi ) = \phi(V) = \{ v \in V | \phi(v) = v \}$.\\
+Beobachtung : $\phi = Id_V$
+\subsection{ii}
+zz; $v-\phi(v) \in ker(\phi)$\\
+wir haben gerade beobachtet dass $\phi = Id_V$ ist. Also gilt $\forall v \in V :$\\
+$v -\phi(v) = v -v = 0_v \in ker(\phi)$. 
+\subsection{iii}
+zz: $V = ker(\phi) \oplus \phi(V)$\\
+Aus den aussagen (i) und (ii) wissen wir dass $ker(\phi) = \{0_V\}$ und\\ $\phi(V) = \{ v \in V | \phi(v) = v \}$. Wir müssen beweisen, dass $V = ker(\phi) + \phi(V)$ und $ker(\phi) \cap \phi(V) = \{0_v\}$.\\
+Das ist trivial da $Bild(\phi)$, V entspricht und wir aus der Vorlesung wissen, dass $ker(\phi) + \phi(V) \subseteq V$. Es folgt dann $ker(\phi) \cap \phi(V) = \{0_v\} \cap V = {0_v}$. 
+\subsection{iv}
+Sei $\phi = Id_V$ und $x,y \in V$ mit der eigenschaft $x \neq y$.\\
+$ \phi(x) = \phi(y) \Rightarrow x = y$, das wiederspricht die Definition. Also können wir behaupten dass $\phi$ Injektiv ist.\\
+Sollte $\phi \neq Id_V$ sein. Folgt $\phi(x) \neq x$ besipielweise $\phi(x) = ax$ mit $a \in \mathbb{K}$.\\
+$\Rightarrow \phi(x) = \phi(y) \Rightarrow ax = ay$ uund ist genauso injektiv o.O \\
+was mache ich falsch? :(
+\section{Aufgabe 3}
+\subsection{i}
+zz. $ (D \circ \phi_n) \;\mathbb{R}$ linear ist. Wobei\\
+$D := P_n \rightarrow P_n, \; f \mapsto (f' : I \rightarrow \mathbb{R}, x \mapsto \frac{df(x)}{dx})$\\
+$ \phi_n : \mathbb{R}^{n+1}\rightarrow C^0(I,\mathbb{R})$ \\
+$ \phi_n(v) = p \in C^0(I,\mathbb{R}) \Leftrightarrow \\(v= \sum_{k=1}^{n+1} a_{k-1}e_k \wedge (\forall x \in i : p(x) =  \sum_{k=0}^{n}a_kx^k), a_o,...,a_n \in \mathbb{R})$ \\\\
+Beweis:\\
+Seien $n\in \mathbb{N}, \; \lambda , a_1,...,a_n \in \mathbb{R}, b_1,...,b_n \in \mathbb{R}, x \in I,v,w \in \mathbb{R}^{n} $ mit $v := (a_1,...,a_n),\;w:=(b_1,...,b_n)$\\\\
+$\bullet$ $ (D \circ \phi_n (v))(x)+(D \circ \phi_n(w))(x) = (D \circ \phi_n(v+w))(x))$\\\\
+$ (D \circ \phi_n(v))(x)+(D \circ \phi_n(w))(x) = D( \sum_{k=0}^{n}a_kx^k )+D( \sum_{k=0}^{n}b_ky^k )=$\\\\
+$ \sum_{k=0}^{n-1}ka_kx^{k-1} + \sum_{k=0}^{n-1}kb_kx^{k-1} =\sum_{k=0}^{n-1}ka_kx^{k-1} + kb_kx^{k-1} $ \\\\
+$ (D \circ \phi_n(v+w))(x) = D(\sum_{k=0}^{n}(a_k+b_k)x^{k} ) = \sum_{k=0}^{n-1}k(a_k+b_k)x^{k-1} =$\\\\
+$\sum_{k=0}^{n-1}ka_kx^{k-1} + kb_kx^{k-1}$
+\begin{flushright}\checkmark\end{flushright}
+$\bullet$ $ \lambda (D \circ \phi_n(v))(x) = (D \circ \phi_n(\lambda v))(x) $\\\\
+$ \lambda (D \circ \phi_n(v))(x) = \lambda \;D( \sum_{k=0}^{n}a_kx^k ) = \lambda \cdot \sum_{k=0}^{n-1}ka_k x^{k-1}= $\\\\
+$ \sum_{k=0}^{n-1} \lambda ka_kx^{k-1} $\\\\
+$(D \circ \phi_n(\lambda v))(x) = D( \sum_{k=0}^{n}\lambda a_kx^k ) = \sum_{k=0}^{n-1}k\lambda a_kx^{k-1} $\\
+Da die multiplikation in $\mathbb{R}$ kommutativ ist, sind die 2 aussagen gleich.\begin{flushright}\checkmark\end{flushright}
+Also ist $(D \circ \phi_n)$ $\mathbb{R}$-Linear .\\\\
+$$ker(D \circ \phi_n):= \{x\in I: (\phi_n(v))(x)=0 \in  C^0(I,\mathbb{R}), v \in \mathbb{R}^n \}$$
+$$Im(D \circ \phi_n):= \{(\phi_n(v)) \in  C^0(I,\mathbb{R}), v \in \mathbb{R}^n \}$$
+\subsection{ii}
+
+\section{Aufgabe 4}
+\subsection{i $V^+$}
+Sei $ v \in V^+ \subseteq V$ und $V^+ := \{ v \in V | \phi(v)=v \} $.\\
+Gibt es $ v \in V^+ \subseteq V $ sodass $\phi(v)=v$, also ist $ V^+ \neq \emptyset$.\\\\
+Seien $ v,w \in V^+ \subseteq V$ gilt $ \phi(v)+\phi(w)=v+w=\phi(v+w) \Rightarrow v+w \in V^+$\\\\
+Sei $ v \in V^+ \subseteq V$ und $ \lambda \in \mathbb{K}$ gilt $\lambda \phi(v) = \lambda v = \phi(\lambda v) \Rightarrow \lambda v \in V^+$
+\subsection{i $V^-$}
+Sei $ v \in V^- \subseteq V$ und $V^- := \{ v \in V | \phi(v)=-v \} $.\\
+Gibt es $ v \in V^- \subseteq V $ sodass $\phi(v)=-v$, also ist $ V^- \neq \emptyset$.\\\\
+Seien $ v,w \in V^- \subseteq V$ gilt $ \phi(v)+\phi(w)=(-v)+(-w)= -(v+w) =\phi(v+w) \Rightarrow v+w \in V^-$\\\\
+Sei $ v \in V^- \subseteq V$ und $ \lambda \in \mathbb{K}$ gilt $\lambda \phi(v) = \lambda (-v) = -(\lambda v) = \phi(\lambda v) \Rightarrow \lambda v \in V^-$
+\subsection{ii}
+Wir starten mit der Gleicheit $ V = V^+ V^-$ und schliesßen ab mit $V^+ \cap V^-=\{0_v\}$.\\\\
+$\supseteq$: Aus der Vorlesung wissen wir, dass $V^+ V^- \supseteq V$  ist.\\
+$\subseteq$: Aus der definition von K aus der Übung wissen wir dass $1_k \neq -1_k$, also folgern vir dass ein Vektor $v$ element des K-Vektorraums $V$ zwei möglichen Darstellungen hat: $v_1 = 1_k v$ oder $v_2 = -1_k v = -v$.\\
+Also gilt es $\phi(v_1)=\phi(1_k v_1)=1_k v_1 \in V^+$ und $\phi(v_2)=\phi(-1_k v_2)-=1_k v_2 \in V^-$\\
+$\Rightarrow v$ ist zwingend teil von $V^+$ oder $V^-$ und daraus lässt sich folgern, dass $V = V^+ + V^-$\\
+Es bleibt zu zeigen, dass $V^+ \cap V^-=\{0_v\}$. Wir wissen schon aus der Vorlesung, dass $0_v \in V^+$ sowie $0_v \in V^-$.\\
+Sei $\phi \in V^+\cap V^-$ müssen wir ein $v \in V$ finden können, sodaß $\phi(v)=\phi(-v) \Rightarrow v=-v$ da $1_k \neq -1_k$ folgt widerspruch. Also ist $o_v$ das einzige elsement in $V^+ \cap V^-$.
+
+\end{document}

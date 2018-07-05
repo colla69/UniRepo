@@ -1,0 +1,45 @@
+	Wed Jul  4 23:28 2018 Time and Allocation Profiling Report  (Final)
+
+	   H10-3 +RTS -p -RTS
+
+	total time  =        0.00 secs   (0 ticks @ 1000 us, 1 processor)
+	total alloc =      74,248 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE            %time %alloc
+
+CAF         GHC.IO.Handle.FD    0.0   46.5
+CAF         GHC.IO.Encoding     0.0    3.9
+showsPrec   Main                0.0    8.3
+main        Main                0.0   35.5
+actions     Main                0.0    2.1
+
+
+                                                            individual      inherited
+COST CENTRE        MODULE                no.     entries  %time %alloc   %time %alloc
+
+MAIN               MAIN                   46          0    0.0    0.9     0.0  100.0
+ main              Main                   93          0    0.0   25.6     0.0   25.6
+ CAF               Main                   91          0    0.0    0.0     0.0   21.9
+  actions          Main                  105          0    0.0    1.0     0.0    1.0
+  tick             Main                  100          1    0.0    0.0     0.0    0.0
+  showsPrec        Main                   96          0    0.0    2.5     0.0    2.5
+  main             Main                   92          1    0.0    9.9     0.0   18.3
+   main.result     Main                  106          1    0.0    0.0     0.0    0.0
+   main.(...)      Main                   98          1    0.0    0.0     0.0    2.1
+    actions        Main                   99          1    0.0    1.1     0.0    2.1
+     actions.r2    Main                  110          1    0.0    0.0     0.0    0.0
+     zeit          Main                  109          2    0.0    0.0     0.0    0.0
+     actions.r1    Main                  107          1    0.0    0.0     0.0    0.0
+     swapWetter    Main                  102          2    0.0    0.3     0.0    0.3
+      wetter       Main                  108          2    0.0    0.0     0.0    0.0
+      swapWetter.\ Main                  104          2    0.0    0.0     0.0    0.0
+     tick          Main                  101          0    0.0    0.5     0.0    0.7
+      tick.\       Main                  103          7    0.0    0.2     0.0    0.2
+   main.finalState Main                   97          1    0.0    0.0     0.0    0.0
+   showsPrec       Main                   95          2    0.0    5.8     0.0    5.8
+   main.startState Main                   94          1    0.0    0.5     0.0    0.5
+ CAF               GHC.IO.Encoding        86          0    0.0    3.9     0.0    3.9
+ CAF               GHC.IO.Encoding.Iconv  85          0    0.0    0.3     0.0    0.3
+ CAF               GHC.IO.Handle.FD       84          0    0.0   46.5     0.0   46.5
+ CAF               GHC.IO.Handle.Text     82          0    0.0    0.1     0.0    0.1
+ CAF               GHC.Conc.Signal        76          0    0.0    0.9     0.0    0.9
