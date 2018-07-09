@@ -92,8 +92,19 @@ extractResult (a:rest) | (get a) ==  Par Nothing = extractResult rest
 --runPar $ do { xs <- forM [1..3] (\x -> spawnP (\x -> x*x)); mapM get xs }
 parallelFactorisation :: (Integer,Integer) -> Integer -> Maybe Integer
 parallelFactorisation interval@(lo,hi) p = 
-  do runPar $ do res <- mapM (\x -> spawnP $ slowFactor x p) $ splitIntervall interval
-                 get res
+  do runPar $ do 
+                 let list = splitIntervall interval
+                 x1 <- spawnP $ slowFactor (list!!0)p
+                 x2 <-spawnP $ slowFactor (list!!1) p
+                 x3 <-spawnP $ slowFactor (list!!2) p
+                 x4 <-spawnP $ slowFactor (list!!3) p
+    --res <- mapM (\x -> spawnP $ slowFactor x p) $ splitIntervall interval
+                 --singleres <- (\(x:rest) -> )
+                 --(_, a) <- waitAny $ res
+
+                 liftM2 (.) (get x1) $ get x2 -- $ get x3 $ get x4
+
+                 --return 
 
     --slowFactor interval p
 -- intervall (lo,hi) in mehrere Teilintervalle teilen
