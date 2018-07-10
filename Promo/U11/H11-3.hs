@@ -83,29 +83,39 @@ splitIntervall interval@(lo,hi)
            ((interval `div` 4)+1 , (interval `div` 4)*2 ),
            (((interval `div` 4)*2)+1 , (interval `div` 4)*3),
            (((interval `div` 4)*3)+1 , hi)]
-{-
-extractResult :: [IVar (Maybe Integer)] -> IVar (Maybe Integer)
-extractResult (a:rest) | (get a) ==  Par Nothing = extractResult rest
-                       | otherwise = a 
--}
+
+choose :: [(Maybe Integer)] -> Maybe Integer
+choose [] = Nothing
+choose (Nothing:res) = choose res
+choose ((Just a):_) = (Just a)
+
 --hier arbeiten
 --runPar $ do { xs <- forM [1..3] (\x -> spawnP (\x -> x*x)); mapM get xs }
 parallelFactorisation :: (Integer,Integer) -> Integer -> Maybe Integer
 parallelFactorisation interval@(lo,hi) p = 
-  do runPar $ do 
-                 let list = splitIntervall interval
+ do runPar$ do   let list = splitIntervall interval
                  x1 <- spawnP $ slowFactor (list!!0)p
-                 x2 <-spawnP $ slowFactor (list!!1) p
-                 x3 <-spawnP $ slowFactor (list!!2) p
-                 x4 <-spawnP $ slowFactor (list!!3) p
+                 x2 <- spawnP $ slowFactor (list!!1) p
+                 x3 <- spawnP $ slowFactor (list!!2) p
+                 x4 <- spawnP $ slowFactor (list!!3) p
+
+                 r1 <- get x1
+                 r2 <- get x2
+                 r3 <- get x3
+                 r4 <- get x4
+                 return r4-- $ choose [r1, r2, r3, r4]    
+{-
+  do runPar $ do res <- parMapM (\x -> spawnP $ slowFactor x p) $ splitIntervall interval
+                 results <- mapM (\x -> get x) res
+                 return $ choose results 
     --res <- mapM (\x -> spawnP $ slowFactor x p) $ splitIntervall interval
                  --singleres <- (\(x:rest) -> )
                  --(_, a) <- waitAny $ res
+                 
+                 -- liftM2 () (get x1) -- $ get x2 -- $ get x3 $ get x4
 
-                 liftM2 (.) (get x1) $ get x2 -- $ get x3 $ get x4
-
-                 --return 
-
+                 get x2
+-}
     --slowFactor interval p
 -- intervall (lo,hi) in mehrere Teilintervalle teilen
 -- die einzelne Intervalle parllel durchlaufen 
