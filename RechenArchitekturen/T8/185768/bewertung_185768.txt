@@ -1,0 +1,48 @@
+= Bitte nur Bewertung und Kommentare ändern =
+=============================================
+========== UniWorx Bewertungsdatei ==========
+======= diese Datei ist UTF8 encodiert ======
+Informationen zum Übungsblatt:
+Veranstaltung: Rechnerarchitektur
+Blatt: Blatt 08
+Korrektor: Daniëlle Schuman
+E-Mail: D.Schuman@campus.lmu.de
+Abgabe-Id: 185768
+Maximalpunktzahl: 18 Punkte
+=============================================
+Bewertung: 8.5
+=============================================
+Kommentare:
+Aufgabe 38 (5,5/13)
+a) (1/6) :(
+- Wenn du deine Minterme zu Primimplikanten kürzt, hast du:
+- Pro Kürz-Schritt eine (!) Tabelle -> wären in deieser Aufgabe also 3 Tabellen: 
+Eine ungekürzt und zwei mit den gekürzten Implikanten
+- Jede dieser Tabelle hat 3 Spalten: Die Gruppe, deren Nummer der Anzahl der Negationen
+entspricht, den Minterm / Implikant, den du jeweils in der Form -x1 x2 -x3 x4 hinschreibst
+(und nicht 0101) (z.B.), und den einschlägigen Index (z.B. 5)
+- Das, was du gemacht hast, ist unvollständig: z.B. könntest du noch 10 mit 14 kürzen
+-> bitte schau dir die Lösung aus dem Tutorium nochmal an! Und eventl. das Skript!
+- Du kriegst einen Punkt, weil du richtig die Terme x1x2x3 und -x1x4vin deinem Ergebnis hast.
+(Richtiges Ergebnis wäre x1*x2*x3 + x1*x3*(-x4) + (-x1)*x4 oder
+x2*x3*x4 + x1*x3*(-x4) + (-x1)*x4)
+b) (4,5/6)
+- In Zeile 10 fehlen dir 2 D's: Einmal in Spalte 00 und einmal in Spalte 01. -> -0,5 Punkte
+-> Folgefehler: Du hättest mit diesen D's größere Blöcke machen können.
+- Den Block aus Zeile 01 hättest du größer machen können, indem du die zwei D's aus der 
+Zeile drüber hinzufügst -> weniger Variablen im Produktterm -> weiter minimierte Funktion
+-> -1 Punkt
+-> Folgefehler beim Endergebnis: Richtig wäre: x3 + x1*x4 + (-x1)*(-x4)
+c) (1/1) Stimmt :)! Das Verfahren heißt allerdings Quine-McClusky.
+
+Aufgabe 39 (3/5)
+c) Richtig wäre hier (iii) 9: lw $t1, var lädt den Wert, der im Speicher an der Adresse
+des Labels var steht, das ist also 8, in $t1. lw $t2, var+8($t1) lädt den Wert, der im
+Speicher an der Adresse von var + 8 + dem Wert in $t1 als Adresse gesehen, also 8, in $t2.
+Wir gehen in 4er-Schritten durch den Speicher (weil wir 4 Byte als Speichergröße für .word
+haben) -> an var + 16 steht die Zahl 9.
+d) Die Frage war hier, welche Funktion NICHT der Funktion in der Tabelle entspricht.
+ x1 + -x2 entspricht der Funktion in der Tabelle, die Funktionen bei (i) und (iii) lassen
+ sich hierzu umformen. Richtig wäre deshalb (ii): Diese Funktion entspricht nicht der der
+ Tabelle.
+============ Ende der Kommentare ============
