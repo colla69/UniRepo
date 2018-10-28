@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.26)  26 OCT 2018 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.26)  28 OCT 2018 19:03
 entering extended mode
 **./B2_LSG.tex
 (B2_LSG.tex
@@ -218,42 +218,94 @@ Overfull \hbox (38.00279pt too wide) in paragraph at lines 13--14
 [][] 
  []
 
-<AB2-2_1.jpg, id=13, 2505.36pt x 1573.88pt>
-File: AB2-2_1.jpg Graphic file (type jpg)
-<use AB2-2_1.jpg>
-Package pdftex.def Info: AB2-2_1.jpg  used on input line 16.
-(pdftex.def)             Requested size: 751.61382pt x 472.16765pt.
+<AB2-1b_1.jpg, id=13, 2473.24pt x 835.12pt>
+File: AB2-1b_1.jpg Graphic file (type jpg)
+<use AB2-1b_1.jpg>
+Package pdftex.def Info: AB2-1b_1.jpg  used on input line 15.
+(pdftex.def)             Requested size: 741.97774pt x 250.53793pt.
+<AB2-1b_2.jpg, id=14, 2505.36pt x 770.88pt>
+File: AB2-1b_2.jpg Graphic file (type jpg)
+<use AB2-1b_2.jpg>
+Package pdftex.def Info: AB2-1b_2.jpg  used on input line 16.
+(pdftex.def)             Requested size: 751.61382pt x 231.26578pt.
 
-Overfull \hbox (20.37798pt too wide) in paragraph at lines 16--17
+Overfull \hbox (10.7419pt too wide) in paragraph at lines 15--17
+[] 
+ []
+
+
+Overfull \hbox (20.37798pt too wide) in paragraph at lines 15--17
 [] 
  []
 
 [3 <./AB2-1a_2.jpg>]
-Overfull \vbox (46.46411pt too high) has occurred while \output is active []
+Overfull \vbox (23.45683pt too high) has occurred while \output is active []
 
 
-[4 <./AB2-2_1.jpg>]
-<AB2-4_1.jpg, id=20, 2275.50125pt x 1368.11125pt>
+[4 <./AB2-1b_1.jpg> <./AB2-1b_2.jpg>]
+<AB2-2_1.jpg, id=21, 2505.36pt x 1573.88pt>
+File: AB2-2_1.jpg Graphic file (type jpg)
+<use AB2-2_1.jpg>
+Package pdftex.def Info: AB2-2_1.jpg  used on input line 18.
+(pdftex.def)             Requested size: 751.61382pt x 472.16765pt.
+
+Overfull \hbox (20.37798pt too wide) in paragraph at lines 18--19
+[] 
+ []
+
+
+Overfull \vbox (16.71411pt too high) has occurred while \output is active []
+
+
+[5 <./AB2-2_1.jpg>]
+<Ab2-3_1.jpg, id=25, 2473.24pt x 1252.68pt>
+File: Ab2-3_1.jpg Graphic file (type jpg)
+<use Ab2-3_1.jpg>
+Package pdftex.def Info: Ab2-3_1.jpg  used on input line 20.
+(pdftex.def)             Requested size: 741.97774pt x 375.8069pt.
+
+Overfull \hbox (10.7419pt too wide) in paragraph at lines 20--20
+[] 
+ []
+
+[6 <./Ab2-3_1.jpg>]
+<Ab2-3_2.jpg, id=29, 2409.0pt x 1252.68pt>
+File: Ab2-3_2.jpg Graphic file (type jpg)
+<use Ab2-3_2.jpg>
+Package pdftex.def Info: Ab2-3_2.jpg  used on input line 21.
+(pdftex.def)             Requested size: 722.7056pt x 375.8069pt.
+
+Overfull \hbox (9.09457pt too wide) in paragraph at lines 21--21
+[][] 
+ []
+
+[7 <./Ab2-3_2.jpg>]
+<Ab2-3_3.jpg, id=34, 2023.56pt x 1124.2pt>
+File: Ab2-3_3.jpg Graphic file (type jpg)
+<use Ab2-3_3.jpg>
+Package pdftex.def Info: Ab2-3_3.jpg  used on input line 22.
+(pdftex.def)             Requested size: 607.0727pt x 337.2626pt.
+<AB2-4_1.jpg, id=35, 2275.50125pt x 1368.11125pt>
 File: AB2-4_1.jpg Graphic file (type jpg)
 <use AB2-4_1.jpg>
-Package pdftex.def Info: AB2-4_1.jpg  used on input line 19.
+Package pdftex.def Info: AB2-4_1.jpg  used on input line 25.
 (pdftex.def)             Requested size: 682.65565pt x 410.43654pt.
- [5 <./AB2-4_1.jpg>] [6] (B2_LSG.aux) ) 
+ [8 <./Ab2-3_3.jpg>] [9 <./AB2-4_1.jpg>] [10] (B2_LSG.aux) ) 
 Here is how much of TeX's memory you used:
- 1951 strings out of 492970
- 28156 string characters out of 3135854
+ 1976 strings out of 492970
+ 28536 string characters out of 3135854
  95615 words of memory out of 3000000
- 5822 multiletter control sequences out of 15000+200000
+ 5842 multiletter control sequences out of 15000+200000
  6063 words of font info for 22 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,25p,275b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr17.pfb>
-Output written on B2_LSG.pdf (6 pages, 1156190 bytes).
+<C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb>
+Output written on B2_LSG.pdf (10 pages, 2296980 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
