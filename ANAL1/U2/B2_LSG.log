@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.26)  28 OCT 2018 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.26)  29 OCT 2018 09:02
 entering extended mode
 **./B2_LSG.tex
 (B2_LSG.tex
 LaTeX2e <2018-04-01> patch level 5
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -49,6 +49,14 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
@@ -73,37 +81,41 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen110
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
-\Gm@dimlist=\toks17
+\Gm@dimlist=\toks18
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")) (B2_LSG.aux)
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+
+LaTeX Warning: Unused global option(s):
+    [14pt].
+
+(B2_LSG.aux)
 \openout1 = `B2_LSG.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count91
 \scratchdimen=\dimen113
 \scratchbox=\box26
 \nofMPsegments=\count92
 \nofMParguments=\count93
-\everyMPshowfont=\toks18
+\everyMPshowfont=\toks19
 \MPscratchCnt=\count94
 \MPscratchDim=\dimen114
 \MPnumerator=\count95
 \makeMPintoPDFobject=\count96
-\everyMPtoPDFconversion=\toks19
+\everyMPtoPDFconversion=\toks20
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -171,12 +183,12 @@ G,.JBIG2,.JB2,.eps]
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
 * \marginparwidth=144.0pt
-* \marginparsep=10.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -186,126 +198,133 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 9.
-[1
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 {C:/Users/colla/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<AB2-1a_1.jpg, id=7, 2473.24pt x 1445.4pt>
+<AB2-1a_1.jpg, id=8, 2473.24pt x 1445.4pt>
 File: AB2-1a_1.jpg Graphic file (type jpg)
 <use AB2-1a_1.jpg>
-Package pdftex.def Info: AB2-1a_1.jpg  used on input line 12.
+Package pdftex.def Info: AB2-1a_1.jpg  used on input line 13.
 (pdftex.def)             Requested size: 741.97774pt x 433.62335pt.
 
-Overfull \hbox (10.7419pt too wide) in paragraph at lines 12--12
+Overfull \hbox (10.7419pt too wide) in paragraph at lines 13--13
 [] 
  []
 
-
-Overfull \vbox (4.15982pt too high) has occurred while \output is active []
-
-
 [2 <./AB2-1a_1.jpg>]
-<AB2-1a_2.jpg, id=12, 2505.36pt x 1027.84pt>
+<AB2-1a_2.jpg, id=13, 2505.36pt x 1027.84pt>
 File: AB2-1a_2.jpg Graphic file (type jpg)
 <use AB2-1a_2.jpg>
-Package pdftex.def Info: AB2-1a_2.jpg  used on input line 13.
+Package pdftex.def Info: AB2-1a_2.jpg  used on input line 14.
 (pdftex.def)             Requested size: 751.61382pt x 308.35437pt.
 
-Overfull \hbox (38.00279pt too wide) in paragraph at lines 13--14
+Overfull \hbox (35.37798pt too wide) in paragraph at lines 14--15
 [][] 
  []
 
-<AB2-1b_1.jpg, id=13, 2473.24pt x 835.12pt>
+<AB2-1b_1.jpg, id=14, 2473.24pt x 835.12pt>
 File: AB2-1b_1.jpg Graphic file (type jpg)
 <use AB2-1b_1.jpg>
-Package pdftex.def Info: AB2-1b_1.jpg  used on input line 15.
+Package pdftex.def Info: AB2-1b_1.jpg  used on input line 16.
 (pdftex.def)             Requested size: 741.97774pt x 250.53793pt.
-<AB2-1b_2.jpg, id=14, 2505.36pt x 770.88pt>
+<AB2-1b_2.jpg, id=15, 2505.36pt x 770.88pt>
 File: AB2-1b_2.jpg Graphic file (type jpg)
 <use AB2-1b_2.jpg>
-Package pdftex.def Info: AB2-1b_2.jpg  used on input line 16.
+Package pdftex.def Info: AB2-1b_2.jpg  used on input line 17.
 (pdftex.def)             Requested size: 751.61382pt x 231.26578pt.
 
-Overfull \hbox (10.7419pt too wide) in paragraph at lines 15--17
+Overfull \hbox (10.7419pt too wide) in paragraph at lines 16--18
 [] 
  []
 
 
-Overfull \hbox (20.37798pt too wide) in paragraph at lines 15--17
+Overfull \hbox (20.37798pt too wide) in paragraph at lines 16--18
 [] 
  []
 
 [3 <./AB2-1a_2.jpg>]
-Overfull \vbox (23.45683pt too high) has occurred while \output is active []
+Overfull \vbox (19.56516pt too high) has occurred while \output is active []
 
 
 [4 <./AB2-1b_1.jpg> <./AB2-1b_2.jpg>]
-<AB2-2_1.jpg, id=21, 2505.36pt x 1573.88pt>
+<AB2-2_1.jpg, id=22, 2505.36pt x 1573.88pt>
 File: AB2-2_1.jpg Graphic file (type jpg)
 <use AB2-2_1.jpg>
-Package pdftex.def Info: AB2-2_1.jpg  used on input line 18.
+Package pdftex.def Info: AB2-2_1.jpg  used on input line 19.
 (pdftex.def)             Requested size: 751.61382pt x 472.16765pt.
 
-Overfull \hbox (20.37798pt too wide) in paragraph at lines 18--19
+Overfull \hbox (20.37798pt too wide) in paragraph at lines 19--20
 [] 
  []
 
 
-Overfull \vbox (16.71411pt too high) has occurred while \output is active []
+Overfull \vbox (12.17352pt too high) has occurred while \output is active []
 
 
 [5 <./AB2-2_1.jpg>]
-<Ab2-3_1.jpg, id=25, 2473.24pt x 1252.68pt>
+<Ab2-3_1.jpg, id=26, 2473.24pt x 1252.68pt>
 File: Ab2-3_1.jpg Graphic file (type jpg)
 <use Ab2-3_1.jpg>
-Package pdftex.def Info: Ab2-3_1.jpg  used on input line 20.
+Package pdftex.def Info: Ab2-3_1.jpg  used on input line 21.
 (pdftex.def)             Requested size: 741.97774pt x 375.8069pt.
 
-Overfull \hbox (10.7419pt too wide) in paragraph at lines 20--20
+Overfull \hbox (10.7419pt too wide) in paragraph at lines 21--21
 [] 
  []
 
 [6 <./Ab2-3_1.jpg>]
-<Ab2-3_2.jpg, id=29, 2409.0pt x 1252.68pt>
+<Ab2-3_2.jpg, id=30, 2409.0pt x 1252.68pt>
 File: Ab2-3_2.jpg Graphic file (type jpg)
 <use Ab2-3_2.jpg>
-Package pdftex.def Info: Ab2-3_2.jpg  used on input line 21.
+Package pdftex.def Info: Ab2-3_2.jpg  used on input line 22.
 (pdftex.def)             Requested size: 722.7056pt x 375.8069pt.
 
-Overfull \hbox (9.09457pt too wide) in paragraph at lines 21--21
+Overfull \hbox (6.46976pt too wide) in paragraph at lines 22--22
 [][] 
  []
 
 [7 <./Ab2-3_2.jpg>]
-<Ab2-3_3.jpg, id=34, 2023.56pt x 1124.2pt>
+<Ab2-3_3.jpg, id=35, 2023.56pt x 1124.2pt>
 File: Ab2-3_3.jpg Graphic file (type jpg)
 <use Ab2-3_3.jpg>
-Package pdftex.def Info: Ab2-3_3.jpg  used on input line 22.
+Package pdftex.def Info: Ab2-3_3.jpg  used on input line 23.
 (pdftex.def)             Requested size: 607.0727pt x 337.2626pt.
-<AB2-4_1.jpg, id=35, 2275.50125pt x 1368.11125pt>
+<AB2-4_1.jpg, id=36, 2275.50125pt x 1368.11125pt>
 File: AB2-4_1.jpg Graphic file (type jpg)
 <use AB2-4_1.jpg>
-Package pdftex.def Info: AB2-4_1.jpg  used on input line 25.
+Package pdftex.def Info: AB2-4_1.jpg  used on input line 26.
 (pdftex.def)             Requested size: 682.65565pt x 410.43654pt.
  [8 <./Ab2-3_3.jpg>] [9 <./AB2-4_1.jpg>] [10] (B2_LSG.aux) ) 
 Here is how much of TeX's memory you used:
- 1976 strings out of 492970
- 28536 string characters out of 3135854
- 95615 words of memory out of 3000000
- 5842 multiletter control sequences out of 15000+200000
- 6063 words of font info for 22 fonts, out of 3000000 for 9000
+ 2083 strings out of 492970
+ 29936 string characters out of 3135854
+ 97057 words of memory out of 3000000
+ 5925 multiletter control sequences out of 15000+200000
+ 11195 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,275b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,6n,25p,275b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb>
-Output written on B2_LSG.pdf (10 pages, 2296980 bytes).
+9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on B2_LSG.pdf (10 pages, 2359682 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
