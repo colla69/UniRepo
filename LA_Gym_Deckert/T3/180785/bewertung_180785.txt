@@ -1,0 +1,22 @@
+= Bitte nur Bewertung und Kommentare ändern =
+=============================================
+========== UniWorx Bewertungsdatei ==========
+======= diese Datei ist UTF8 encodiert ======
+Informationen zum Übungsblatt:
+Veranstaltung: Lineare Algebra (Lehramt)
+Blatt: Tutoriumsblatt 3
+Korrektor: Thomas Eingartner
+E-Mail: T.Eingartner@campus.lmu.de
+Abgabe-Id: 180785
+Maximalpunktzahl: 100 Punkte
+=============================================
+Bewertung: 7
+=============================================
+Kommentare:
+Aufgabe 1: 25% 
+Teilaufgabe 1(i): 25% (Typ 2 - 1 "Punkt")
+Teilaufgabe 1(ii): 25% (Typ 1 - 4 "Punkte")
+Teilaufgabe 1(iii): 50% (Typ 1 - 4 "Punkte")
+Aufgabe 2: 25%
+Teilaufgabe 2 (Typ 1 - 4 "Punkte")
+============ Ende der Kommentare ============

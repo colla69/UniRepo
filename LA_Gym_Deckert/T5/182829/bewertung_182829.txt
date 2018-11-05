@@ -1,0 +1,17 @@
+= Bitte nur Bewertung und Kommentare ändern =
+=============================================
+========== UniWorx Bewertungsdatei ==========
+======= diese Datei ist UTF8 encodiert ======
+Informationen zum Übungsblatt:
+Veranstaltung: Lineare Algebra (Lehramt)
+Blatt: Tutoriumsblatt 5
+Korrektor: Karl-Wilhelm Bollweg
+E-Mail: G.Bollweg@campus.lmu.de
+Abgabe-Id: 182829
+Maximalpunktzahl: 100 Punkte
+=============================================
+Bewertung: 55
+=============================================
+Kommentare:
+
+============ Ende der Kommentare ============
