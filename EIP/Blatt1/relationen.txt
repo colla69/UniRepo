@@ -1,0 +1,21 @@
+(a)
+	M ist teilmenge von N
+	N = {x | x element N AND x > 1}
+	M = {x | x element N AND x > 10}
+	
+	M ist echte Teilmenge von M
+	N = {1,2,3}
+	M = {1,2}
+	
+	M und N sind disjunkt 
+	N = {x | x element N AND x < 10}
+	M = {x | x element N AND x > 10}
+	
+	M und N sind identisch
+	N = {1,2,3}
+	M = {1,2,3}
+	
+(b)
+	
+	
+	
