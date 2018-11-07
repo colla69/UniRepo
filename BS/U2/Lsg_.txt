@@ -1,0 +1,43 @@
+Aufgabe 10 
+
+a) 
+	logischer Mehrprogrammbertrieb (pseudo parallele ausführungen v. prozessen)
+b)
+	Erhöung der Hardware-Nutztung
+	
+c)
+	+  keine duplizierung von Stromversorgung / Gehöuse / peripherie
+	+  Schneller als Multiprogramming auf einem Prozessor.
+	-  KOmplexer , Betriebsystem muss scheduling anpassen
+d) i)
+	PROGRAMM 	P;
+	BEGIN
+	A;
+	B;	
+	C;
+	END;
+	
+	PROGRAMM	Q;
+	BEGIN
+	D;
+	E;
+	END;
+
+	LSG : ADEBC ABDEC ABCDE ADBEC 
+	ADBCE ABDCE DEABC DABCE DAEBC DABEC
+
+	ii)
+	
+	Wann, Wenn E vor B ausgeführt wird.
+	 -> E liest schmutzige daten ein 
+	 -> Rollback Aktionen von E werden zurückgesetzt
+	 -> Prozesse synchronisieren
+	
+	
+Aufgabe 11
+		
+		A - i 
+		B - ii 
+		C - iv
+		D - iii
+		E - ii

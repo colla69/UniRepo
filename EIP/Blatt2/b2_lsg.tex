@@ -1,0 +1,53 @@
+\documentclass[14pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Andrea Colarieti Tosti}
+\title{Einführung in die Programmierung Blatt 2 Lösung}
+
+\begin{document}
+\maketitle
+\section*{Aufgabe 1}
+\subsection*{a)}
+$$
+  a \vee b = \neg ( \neg a \wedge \neg b)
+$$
+\subsection*{b)}
+NAND ist wie folgt definiert :
+$  a \uparrow b = \neg (a \wedge b) $\\
+Wir versuchen die junktoren $\{ \neg ,\wedge,\vee\}$ mit $\uparrow$ darzustellen: \\
+$$
+\neg \Rightarrow \neg a = a \uparrow a
+$$ $$
+\wedge \Rightarrow a \wedge b = ((a \uparrow b) \uparrow (a \uparrow b))
+$$ $$
+\vee \Rightarrow a \vee b = ((a \uparrow a) \uparrow (b \uparrow b)) 
+$$
+\section*{Aufgabe 2}
+\subsection*{a)}
+Zu zeigen ist das folgende gilt: $ 1+2+4+8+...+2^n = 2^{n+1} -1$\\
+Induktionsanfang: für n = 0 \\
+$ 1 = 2^{0+1}-1=1$\\
+Induktionsannahme: für n gilt:
+$\sum_{k=o}^n 2^n = 2^{n+1}-1 $\\
+Induktionsschritt:\\
+$\sum_{k=o}^n 2^n + 2^{n+1} = 2^{n+1}-1 + 2^{n+1} = 2 \cdot 2^{n+1}-1 = 2^{n+2}-1 $
+\begin{flushright}
+q.e.d.
+\end{flushright}
+\subsection*{b)}
+Induktionsanfang: \\
+$ a_2 = 2- \frac{1}{\frac{n+1}{n}} = 2-\frac{n}{n+1} = \frac{2n+2-n}{n+1} = \frac{n+2}{n+1}$\\\\
+Induktionsschluss:\\
+$ a_{n+1} = 2 - \frac{1}{\frac{n+1}{n}} = 2 - \frac{n}{n+1} = \frac{2n+2-n}{n+1} = \frac{n+2}{n+1}$
+\begin{flushright} q.e.d. \end{flushright}
+
+\section*{Aufgabe 3}
+\subsection*{a)}
+Die Funktion evaluate(t) ist Injektiv da der Baum immer mehr breiter wird.
+\subsection*{b)}
+ 
+
+\end{document}

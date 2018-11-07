@@ -1,0 +1,65 @@
+
+Aufgabe 12
+
+	new 				exit
+		ready 	running
+			blocked 
+		
+a)  i) erlaubt
+	ii) erlaubt
+	iii) nicht erlaubt 
+	
+b) 	i)
+	new -> ready 
+		anwendung gestartet, Prozess rechenbereit 
+	Ready -> running 
+		der scheduler wählt einen Prozess aus
+	Running -> Ready 
+		Scheduler unterbricht proz um anderen dran zu nehmen 
+	Running -> Blocked 
+		prozess muss z.B. auf Benutzer eingabe warten
+	blocked -> ready 
+		Benutzereingabe ist erfolgt
+	Running -> Exit 
+		Anwendung wird geschlossen 
+		
+	ii)
+	Es Ändert sich nichts, da das MOdell einen konkreten Prozess beschreibt
+
+Aufgabe 13
+	
+	a)
+	- Speichertabellen ( verwaltung von haupt und virtuellen speicher)
+	- E/A Tabellen ( Verwaltung von EA geräten sowie kanäle)
+	- Dateitabellen ( verwaltung von dateien )
+	- Prozesstabelln ( Prozesszustandsinformationen , prozesskontrollstrukturen
+		prozessidentifikation)
+	
+	b)
+	Ja es gibt querbezüge, zB werden 
+	Speicher, E/A-Geräte , Dateien werden z.B für einzelne Prozesse verwaltet
+	
+	c)
+	PID , PID to speicher Mapping , Interrupts
+	Die lokalisierung hängt von der eingesetzten Speicherverwaltung ab.
+	Das Betriebsystem muss immer wissen wo das Programimage ist.
+	Prozess-image = programm programmdaten + stack + PCB
+	
+Aufgabe 14
+	a) Aus dem Verzeichnis /proc des Dateisystems
+	b) /proc ist kein echter verzeichnis (physisch auf der platte)
+		/proc wird com BSystem dynamisch erzeugt.
+	c) Einfacher Zugriff auf systeminformationen
+	d) i)   -A listet alle Prozesse auf
+	   ii)  -l list 
+	   iii) -p 100: liefert Informationen zum Prozess mit PID=100
+	e) PID, PPID, UID, Priorität
+	f) bash (shell) 
+		ps 
+		die anzeige weiterer prozesse hängt dabon ab, 
+		ob bash noch weitere kindprozesse hat.
+	g) Der Bash-prozess ist vater vom ps-Prozess
+	h) PID vom ps-Prozessändert sich, wil bei jeder Ausführung von ps ein neuer prozess erzeugt wird. 
+	PPID von ps bleibt gleich
+	
+	j) Der wurzelprozess init übernimmt vaterrolle PPid des waisenproc wird 1
