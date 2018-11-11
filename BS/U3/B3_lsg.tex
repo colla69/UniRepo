@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\author{Andrea Colarieti Tosti}
+\title{Betriebsysteme Blatt 3 Lösung}
+
+
+\begin{document}
+\maketitle
+
+\section*{Aufgabe 15}
+\subsection*{a)}
+Im 5-Zustands-Prozessmodell wird der Status "not running" in 3 unterschiedliche Zustände räpresentiert:
+\begin{list}{•}{}
+\item new : bezeichnet ein "frisch erzeugeten" Proz.
+\item ready : das prozess ist für die ausführung bereit
+\item blocked : angehaltener Prozess, wartet auf ereignis (E/A operationen..)
+\end{list}
+Zusätzlich gibt es einen zusätlichen Zustand: Exit. \\
+Wenn das Prozess aus der ausführbaren Menge vom Betriebsystem gelöscht wird. 
+
+\subsection*{b}
+Das hinzufügen von Prozesszustände ermöglicht das entstehen von effektivere Scheduling Strategien. 
+In dem 2-Zustands-Prozessmodell können die Prozesse nicht wirklich "sinnvoll" handgehabt werden, da sie nur "running" oder "not running" sind. \\
+Das lässt als einzige Ausführungsmöglichkeit eine FIFO Queue die im Worst-case zu große wartezeiten führt und die komplette auslastung einer CPU verhindert.
+Mit mehreren Prozesszustände können mehrere Prozesse so handhabt werden, dass die gesamte auslastung der harware viel signifikanter ist. weil prozesse die gerade auf ereignisse warten pausiert werden, sodass andere Prozesse in der Wartezeit ausgeführt werden können.
+
+\subsection*{c)}
+\textbf{Scheduling} heisst die Strategie nach der entschieden wird in welcher Reihenfolge die Prozesse ausgeführt werden.\\
+\textbf{Dispatching} bezeichnet die tatsächliche Aktion mit der einen Prozess angehalten wird und die zuweisung der grad befreiten CPU mit einen neuen Prozess. \\
+\textit{Frage: Dispatching heisst es auch wenn das allererste Proz. auf die CPU gestartet wird oder? oder existirt der dispatcher nur im verbingung mit scheduling strategien? \\ Danke :)}
+\section*{Aufgabe 16}
+\paragraph{a} - iii
+\paragraph{b} - i
+\paragraph{c} - iv
+\paragraph{d} - ii
+\paragraph{e} - iii
+\end{document}
