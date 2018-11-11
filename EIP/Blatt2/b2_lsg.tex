@@ -1,14 +1,18 @@
-\documentclass[14pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{imakeidx}
 \author{Andrea Colarieti Tosti}
 \title{Einführung in die Programmierung Blatt 2 Lösung}
 
+\makeindex
+
 \begin{document}
 \maketitle
+
 \section*{Aufgabe 1}
 \subsection*{a)}
 $$
@@ -25,6 +29,10 @@ $$ $$
 $$ $$
 \vee \Rightarrow a \vee b = ((a \uparrow a) \uparrow (b \uparrow b)) 
 $$
+\subsection*{c)}
+mächtigkeit aus der multiplication der möglichen ergebnisse.\\ auf 2 inputs gibt es 4 mögliche ausfühungen (wahrheitstabelle) diese hat 4 outputs die T oder F sind ..\\
+also berechnen wir $2^4$\\
+$(2^n)^2 = 2^{2n}$ also für 3 folgt $(2^{2\cdot 3}) = 2^6 = 64$
 \section*{Aufgabe 2}
 \subsection*{a)}
 Zu zeigen ist das folgende gilt: $ 1+2+4+8+...+2^n = 2^{n+1} -1$\\
@@ -43,11 +51,19 @@ $ a_2 = 2- \frac{1}{\frac{n+1}{n}} = 2-\frac{n}{n+1} = \frac{2n+2-n}{n+1} = \fra
 Induktionsschluss:\\
 $ a_{n+1} = 2 - \frac{1}{\frac{n+1}{n}} = 2 - \frac{n}{n+1} = \frac{2n+2-n}{n+1} = \frac{n+2}{n+1}$
 \begin{flushright} q.e.d. \end{flushright}
-
 \section*{Aufgabe 3}
 \subsection*{a)}
-Die Funktion evaluate(t) ist Injektiv da der Baum immer mehr breiter wird.
+\textit{Die Funktion evaluate(t) ist Injektiv da der Baum immer mehr breiter wird.}
+nooope die ist doch surjektiv aus dem folgenden Grund: \\
+evaluate(t) gibt true oder false zurück aber die menge der möglichen terme unendlich ist.. me so mongo!
 \subsection*{b)}
- 
+$$
+ h( X \in \sum) $$ $$
+ h( \neg (t)) = 1 + h(t) $$ $$
+ h(\wedge (t_1,t_2)) = 1 + max( h(t_1),h(t_2) )$$ $$
+ h(\vee (t_1,t_2)) = 1 + max( h(t_1),h(t_2) )$$ $$
+$$
+\subsection*{c)}
+NNF ( $ X \in \sum$)
 
 \end{document}

@@ -62,4 +62,4 @@ Aufgabe 14
 	h) PID vom ps-Prozessändert sich, wil bei jeder Ausführung von ps ein neuer prozess erzeugt wird. 
 	PPID von ps bleibt gleich
 	
-	j) Der wurzelprozess init übernimmt vaterrolle PPid des waisenproc wird 1
+	j) Der wurzelprozess init übernimmt vaterrolle PPid des waisenproc wird 1 (Root)
