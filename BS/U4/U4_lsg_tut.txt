@@ -1,0 +1,74 @@
+
+Aufgabe 17:
+
+a)
+	-Nutermodus und Sysemmodus
+	-Unterschiedliche Prozmodi ermöglichen unterschiedliche 
+	 privilegen. z.B hat n proz in nutzermodus weniger privilegen 
+	 als im systemmodus.
+	- Nuterproz können Dienste com Betriebsys abfragen
+	- Diese Dienste werden im Sysmodus ausgeführt
+	
+b) 
+	Man geht davon aus dass Proz nicht lang im Proz. nicht lang 
+	im Systemmodus sind.
+	Ein prozess-switch lohnt sich deshalb nicht.
+	Das erspart Implementierungs und Verwaltungs-Aufwand
+	Es gibtkeine harten Zeitschanken für die AbarbeitungsZeil 
+	-> nicht für Echtzeitbetriebsysteme geeignet.
+	
+Aufgabe 18 
+	
+a) 	
+	die Berechnung würde die komplette Anwendung blockieren.
+	Damit wäre temporär keine Interaktion mit dem Nutzer Möglich.
+	
+b)  in excel 
+
+c) 
+	Kernel level threads scheinen am sinnvollsten 
+	- realtiv wenig aufwand zur generierung
+	- einfacher Datenaustausch
+	- Keine eigene Implementierung von Schedulingalgos nötig
+	- performancengewinn auf Multiprzessor Systeme
+	
+Aufgabe 19 
+
+a)	Wechsel von Usermodus ins Sysemmodus oder umgekehrt
+
+b) 	- Sicherung von 
+	  - Nutzerregistern 
+	  - Stack pointer
+	  - Kontroll und StatusRegister (ProgCounter)
+	- PC muss auf Angangsadress der auszuführenden Sysroutine 
+	  gesetzt werden
+	- Eigentlichen wechsel von User zu Kernel Modus
+	
+c)
+	die vollständige kontext sicherung eines alten prozesses und 
+	kontextaktualisierung/ wiederherstellung des neuen Prozesses.
+	  
+d) 
+	- Aktualisierung Sicherung des Prozesskontrollblocks des alten 
+	  Prozesses 
+	- Einfügen des PCB in die Queue vom Scheduler
+	- Selektion einer anderen Prozesses zur Ausführung
+	- Wiederherstellung und Aktualisierung des PCB des neuen 
+	  Prozess
+
+e) 
+	die menge der Register
+	
+f)
+	i) 	zur unterbrechungsbehandlung 
+		der Interrunp Handler benötigt BS-Funktionen-> Moduswchsel	
+	ii)	Prozesswechsel durch Zustandswchsel 
+	iii)Unterbrechungsbehadlung anschließenden Wchsel zu einem anderen 
+	    Nutzer-prozess
+		
+g)
+	in hinblick auf zukünftige entwicklung eine schlechte Idee
+	da zukünftige anwndungen evtl mehr als 10 registern 
+	benötigen/nutzen 
+		
+	  
