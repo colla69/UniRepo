@@ -63,3 +63,4 @@ Aufgabe 14
 	PPID von ps bleibt gleich
 	
 	j) Der wurzelprozess init übernimmt vaterrolle PPid des waisenproc wird 1 (Root)
+	
