@@ -1,6 +1,6 @@
 public class Addition
 {
-    public static void main(String[] args)
+    public void main(String[] args)
     {
         System.out.print("Dieses Programm addiert drei Zahlen." );
         int x = 3;
