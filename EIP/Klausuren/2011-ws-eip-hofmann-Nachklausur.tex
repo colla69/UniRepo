@@ -1,0 +1,190 @@
+\documentclass{article}
+\usepackage[utf8]{luainputenc}
+\usepackage{listings}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage[margin=3cm]{geometry}
+\begin{document}
+\title{Gedächtnisprotokoll der 2. EIP klausur WS11/12}
+\author{Max}
+\maketitle
+\begin{enumerate}
+	\item Welche der Aussagen sind richtig? 8 Angaben, mir fallen leider nicht alle ein. \hfill \textbf{$[$8P$]$}
+		\begin{itemize}
+			\item Sei \verb|int x;|. Wird x bei \verb|'' '' + x| zu einem String gecastet?
+			\item Sei \verb|int []a;|. Wird mittels  \verb| a[1]| auf das 1. Element zugegriffen.
+			\item Eine Klasse kann mehrere Oberklassen haben.
+			\item Beim Observer pattern muss die Observable alle Observer benachrichtigen.
+			\item Checked exceptions können nicht ignoriert werden.
+		\end{itemize}
+	\item Sei folgende EBNF gegeben \hfill \textbf{$[$8P$]$}
+		\begin{lstlisting}
+<Start> ::== <Produkt>
+<Produkt> ::== [-]<Faktor> | [-]<Faktor> * <Produkt>
+<Faktor> ::== <Zahl> | (<Start>)
+<Zahl> ::== 1 | <Zahl><Binärsymbol>
+<Binärsymbol> ::== 0 | 1
+		\end{lstlisting}
+		Sind folgende Wörter Teil der Grammatik zu dieser Sprache oder nicht und wenn ja zeigen sie es.
+		\begin{itemize}
+			\item \verb| -1 * (100 * - (-10))|
+			\item \verb| -((-1))|
+			\item \verb| 1(100 * -10 * (--10))|
+		\end{itemize}
+		Erweitern sie die Grammatik, so dass Summen zugelassen sind, z.B. soll \verb|-1*(10 + 10*(10 + 100))| erlaubt sein
+		Geben sie auch Regeln, die sie abändern müssen an.
+	\item \hfill \textbf{$[$8P$]$}
+		\begin{enumerate}[a)]
+			\item  Sei \verb| int []a| ein Array mit beliebigen ganzzahligen Werten z.B. \\
+				\verb|a = {-10, 2, 5, -3, 0, 4, 2}|. Schreiben sie eine Funktion, die ein Array zurückgibt, das genau die Quadrate der nicht-negativen Elemente enthält (in genau der Reihnehfolge in der sie in \verb|a| auftreten). Hier wäre dies beispielsweise \verb|{4, 25, 0, 16, 4}|
+			\item Geben sie die Komplexität O(n) ihres Algorithmus an.
+		\end{enumerate}
+	\item Sei \hfill \textbf{$[$6P$]$} 
+		\begin{lstlisting}
+public int f (int x, int y){
+	while (x>0) {
+		y++;
+		x--;
+	} 
+	while (x<0){
+		y--;
+		x++;
+	}
+	return y;
+}
+		\end{lstlisting}
+		\begin{enumerate}[a)]
+			\item Geben sie \begin{inparaenum} \item f(4,2) \item f(2,2) \item f(-2,4) \item f(2012, 1001)\end{inparaenum}{} an.
+				\item Wie lässt sich diese Funktion vereinfachen?
+		\end{enumerate}
+	\item Beim Kindergeburstag spielen 6 Kinder Schokoladenessen. Auf dem Tisch liegen eine Schokolade und eine Gabel. Die Kinder versuchen abwechselnd die Gabel zu erhalten. Nur das Kind mit der Gabel darf ein Stück von der Schokolade essen. Nach dem es mit dem Essen fertig ist, legt das Kind die Gabel weg. Folgendes Program beschreibt die Situation \hfill \textbf{$[$8P$]$} 
+		\begin{lstlisting}
+public class Child extends Thread {
+	int name;
+	public void child(int name){
+		this.name = name;
+	}
+	void getFork() {
+		System.out.println(''Kind '' +
+			this.name + '' hat die Gabel.'');
+		forkowner = this.name;
+	}
+	void eat(){
+		if (forkowner ==  name){
+			Schokolade--; 
+			System.out.println(''Kind '' +
+				name + '' isst.'');
+		}
+	}
+	public void run(){
+		this.getFork();
+		this.eat();
+	}
+	public static void main(String args[]){
+		new Child[] = new Child[5];
+		for (int i=0; i<5; i++){
+			Child[i] = new Child(i);
+			Child[i].start();
+		}
+	}
+}
+\end{lstlisting}
+\begin{enumerate}[a)]
+	\item Warum ist die folgende Ausgabe möglich?
+		\begin{lstlisting}
+			Kind 2 hat die Gabel.
+			Kind 3 hat die Gabel.
+		\end{lstlisting}
+	\item Durch welche Änderung kann man dies verhindern?
+	\item Was passiert wenn man noch ein Messer einführt und warum kann jetzt ein Deadlock auftreten?
+\end{enumerate}
+\item Diese Aufgabe fragte die üblichen Dinge ab zum Hoarekalkül anhand der Modulooperation. 
+	\begin{lstlisting}
+z=r;
+while (r>=0){
+	q=q+1;
+	r=r-n;
+}
+	\end{lstlisting}
+	\begin{enumerate}[a)]
+		\item 
+			\begin{enumerate}[1)]
+				\item Was ist die Invariante? Ist sie vor der Schleife erfüllt? Ist sie danach erfüllt? 
+				\item Gilt die Invariante vor jedem Schleifendurchgang? Nach jedem? Zwischen den beiden Schritten?
+				\item Die Abbruchbedingung ist \verb| r>=0|. Zeigen sie dass diese nicht mehr gilt nach Schleifenende.
+			\end{enumerate}
+		\item Zeige, dass die Abbruchbedingung nach dem Schleifendurchgagn erfüllt ist.
+		\item Durch welchen Code kann man die gesammte Operation ersetzen, wobei nur Zuweisungen benutzt werden.
+		\item Berechne unter Benutzung von c) die Ausgabe wenn $z=2012$ und $n=10$
+	\end{enumerate}
+\item Sei eine Linked List implementiert durch folgenden Code:
+	\begin{lstlisting}
+public class List{
+	private Listitem first;
+	public List ( ){	
+		this.first = null;
+	}
+	public add(ListElem item){
+		item.next = this.first;
+		this.first = item;
+	}
+}
+public class ListElem{
+	public int value;
+	public ListElem next;
+}
+\end{lstlisting}
+\begin{enumerate}[a)]
+	\item Schreiben sie eine Methode, die alle Elemente ausgibt.
+	\item Schreiben sie eine Methode, die die Summe aller Elemente ausgibt.
+	\item Schreiben sie eine Methode, die die Linked List umdreht.
+\end{enumerate}
+\item Sei folgender Code gegeben:
+ \hfill \textbf{$[$8P$]$}
+	\begin{lstlisting}
+class A{
+	private int x;
+	public void A(int x){
+		this.x = x;
+	}
+	public int getX(){
+		return x;
+	}
+	public int foobar (A a){
+		if (a instanceof B){
+			return 2*x;
+		} else {
+			return -x;
+		}
+	}
+	public void say(A a){
+		System.out.println(''A '' + X + 
+			'' '' + a.foobar(this));
+	}
+}
+class B extends A{
+	private y;
+	public void B(int x){
+		super (x+3);
+		y = this.x + x;
+	}
+	public int foobar(A that){
+		return 3*that.foobar(this);
+	}
+	public void say (B b) {
+	System.out.println(''A '' + y + '' '' + b.foobar(this));
+	}
+}
+	\end{lstlisting}
+	Was ist der Output von 
+	\begin{lstlisting}
+A a = new A(5);
+B a = new B(7);
+a.say(a);
+a.say(b);
+b.say(a);
+b.say(b);
+	\end{lstlisting}
+\end{enumerate}
+Korrekturen bitte an Max ä fs.lmu.de.
+\end{document}
