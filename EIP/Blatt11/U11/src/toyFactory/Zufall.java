@@ -1,3 +1,5 @@
+package toyFactory;
+
 import java.util.*;
 									
 public class Zufall {				
@@ -42,7 +44,7 @@ public class Zufall {
     }
 	
 	/**
-     * Gibt etwas zufaelliges Essbares zurueck.
+     * Gibt etwas zufaelliges toyFactory.Essbares zurueck.
      * @return Der Name der Speise.
      */
     public static String essbares() {
@@ -65,7 +67,7 @@ public class Zufall {
 	}
 
     /**
-     * Gibt ein zufaelliges Spielzeug zurueck.
+     * Gibt ein zufaelliges toyFactory.Spielzeug zurueck.
      * 
      * @return Der Name des Spielzeugs.
      */

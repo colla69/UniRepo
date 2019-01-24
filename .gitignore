@@ -3,3 +3,5 @@ EIP/WSProj/.idea/
 EIP/WSProj/out/
 
 *.class
+
+.directory

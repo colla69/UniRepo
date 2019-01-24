@@ -1,3 +1,5 @@
+package toyFactory;
+
 import java.io.*;
 import java.util.*;
 
@@ -8,11 +10,11 @@ public class Werkstatt {
 	
 	private Geschenk[] geschenke;		// Die gesamte Wunschliste
 	
-	private int geschenknummer = 0;		// derzeitig bearbeitetes Geschenk
+	private int geschenknummer = 0;		// derzeitig bearbeitetes toyFactory.Geschenk
 	
-	private Wichtel[] wichtel;			// Alle arbeitenden Wichtel
+	private Wichtel[] wichtel;			// Alle arbeitenden toyFactory.Wichtel
 	
-	// Basiszeiteinheit der Wichtel
+	// Basiszeiteinheit der toyFactory.Wichtel
 	private int runde = 1;
 	
 	
@@ -79,8 +81,8 @@ public class Werkstatt {
 		Arrays.sort(wichtel);
 	}
 	
-	// Eine Werkstatt wird angelegt, dann werden alle Geschenke bearbeitet, 
-	// bis die Liste durch ist. Dann sortieren wir die Wichtel nach Effizienz
+	// Eine toyFactory.Werkstatt wird angelegt, dann werden alle Geschenke bearbeitet,
+	// bis die Liste durch ist. Dann sortieren wir die toyFactory.Wichtel nach Effizienz
 	// und geben sie entsprechend aus.
 	// Momentan auskommentiert, sollte am Schluss alles kompilieren und dem Logfile gleichen.
 	// Erstellen Sie bis dahin eigenen Testaufrufe von Methoden.
@@ -90,7 +92,7 @@ public class Werkstatt {
 		werkstatt.sortiere();
 		werkstatt.zeigeLeistungen();
 		
-		// TODO e): Klonen der drei besten Wichtel
+		// TODO e): Klonen der drei besten toyFactory.Wichtel
 		Wichtel roterSuperWichtel = null;
 		Wichtel blauerSuperWichtel = null;
 		Wichtel gelberSuperWichtel = null;
@@ -101,6 +103,6 @@ public class Werkstatt {
 			if(gelberSuperWichtel == null && w instanceof GelberWichtel) gelberSuperWichtel = new GelberWichtel(w);
 			if(roterSuperWichtel != null && blauerSuperWichtel != null && gelberSuperWichtel != null) break;
 		}
-		//System.out.println("Folgende Wichtel wurden geklont:" + roterSuperWichtel + " " + blauerSuperWichtel +" "+ gelberSuperWichtel);
+		//System.out.println("Folgende toyFactory.Wichtel wurden geklont:" + roterSuperWichtel + " " + blauerSuperWichtel +" "+ gelberSuperWichtel);
 	}
 }
