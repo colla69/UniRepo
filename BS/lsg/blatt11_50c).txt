@@ -1,0 +1,51 @@
+Gast() {
+		while (ture)
+			wait(bar_voll);
+			wait(tür_frei);
+			<die Bar betreten>;
+			signal(tür_frei);
+
+
+			<auf Hocker Platz nehmen>;
+
+
+
+			for(Getränke = 0; Getränke < 3; Getränke++) {
+
+				wait(wirt_bereit);
+
+				//Bestellung aufgeben
+
+				signal(bestellwunsch);
+
+
+				//Zubereitung abwarten
+
+				wait(getränk_fertig);
+
+
+				<Getränk entgegennehmen>;
+
+				signal(wirt_bereit);
+
+			}
+
+			wait(tür_frei);
+
+	 		<die Bar verlassen>;
+	 		signal(tür_frei);
+	 		signal(bar_voll);
+	 	}		
+
+}
+
+
+ Barkeeper() {
+ 		while(true) {
+ 			 //auf Bestellung warten
+ 			 wait(bestellwunsch);
+			 //Fertigstellung signalisieren
+			 signal(getränk_fertig);
+			 <Getränk an den Gast geben>;
+ 		}
+ }

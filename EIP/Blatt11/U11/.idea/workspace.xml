@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70eed176-206a-4b1c-8854-1b1ec369eda8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlauerWichtel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Essbares.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GelberWichtel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Geschenk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kleidung.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RoterWichtel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spielzeug.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Werkstatt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WerkstattTools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Wichtel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Zufall.java" beforeDir="false" />
-    </list>
+    <list default="true" id="70eed176-206a-4b1c-8854-1b1ec369eda8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="214" />
     <option name="y" value="32" />
     <option name="width" value="1272" />
@@ -244,8 +231,7 @@
     <option name="totallyTimeSpent" value="5478000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1928" height="1044" extended-state="7" />
-    <editor active="true" />
+    <frame x="-4" y="0" width="1928" height="1044" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19017094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
