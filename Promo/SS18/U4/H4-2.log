@@ -1,15 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.26)  26 APR 2019 22:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.7)  11 MAY 2018 10:19
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**u1_lsg.tex
-(./u1_lsg.tex
+**./H4-2.tex
+(H4-2.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 5 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article
+.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.
+clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -23,19 +25,22 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputen
+c.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.de
+f"
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.d
+fu"
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -276,7 +281,8 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.
+dfu"
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -317,7 +323,8 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.
+dfu"
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -341,24 +348,30 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsm
+ath.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amst
+ext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsg
+en.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen103
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsb
+sy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amso
+pn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count87
@@ -399,61 +412,240 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ams
+fonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ams
+symb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (./u1_lsg.aux)
-\openout1 = `u1_lsg.aux'.
+)
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
+phicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\key
+val.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
+phics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\tri
+g.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg
+\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def
+\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lis
+tings.sty"
+\lst@mode=\count99
+\lst@gtempboxa=\box28
+\lst@token=\toks22
+\lst@length=\count100
+\lst@currlwidth=\dimen114
+\lst@column=\count101
+\lst@pos=\count102
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count103
+\lst@lineno=\count104
+\lst@maxwidth=\dimen117
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lst
+misc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count105
+\lst@skipnumbers=\count106
+\lst@framebox=\box29
+)
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lis
+tings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (H4-2.aux)
+\openout1 = `H4-2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-
+pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen118
+\scratchbox=\box30
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen119
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks24
+)
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\eps
+topdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
+nfwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grf
+ext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\k
+vdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\l
+txcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvo
+ptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\k
+vsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\e
+texcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
+fluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\p
+dftexcmds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
+fpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\c@lstlisting=\count113
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ums
+a.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ums
+b.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 15--20
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./u1_lsg.aux) ) 
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 21.
+
+("C:\Users\a.colarieti\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.
+fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 21.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--45
+
+ []
+
+[1
+
+{C:/Users/a.colarieti/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(H4-2.aux) ) 
 Here is how much of TeX's memory you used:
- 1445 strings out of 494880
- 15177 string characters out of 6179601
- 67639 words of memory out of 5000000
- 4793 multiletter control sequences out of 15000+600000
- 12403 words of font info for 48 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 27i,7n,24p,223b,190s stack positions out of 5000i,500n,10000p,200000b,80000s
-</
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on u1_lsg.pdf (3 pages, 64114 bytes).
+ 4257 strings out of 493305
+ 56402 string characters out of 3127193
+ 116322 words of memory out of 3000000
+ 7754 multiletter control sequences out of 15000+200000
+ 10888 words of font info for 43 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,6n,32p,273b,1211s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/a.colarieti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb><C:/Users/a.colarieti/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/a.colarieti/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/a
+.colarieti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+12.pfb><C:/Users/a.colarieti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb><C:/Users/a.colarieti/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/a.colarieti/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/a
+.colarieti/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb>
+Output written on H4-2.pdf (1 page, 81643 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
